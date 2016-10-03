@@ -1,0 +1,277 @@
+/* #Global Page Styles
+================================================== */
+html{font-size:100%; overflow-y:scroll; -webkit-overflow-scrolling:touch; -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; height:100%;}
+body{font-family:helvetica, arial, sans-serif; height:100%; font-style:normal; background:#fff; transition:left 100ms ease-in-out, right 100ms ease-in-out;}
+*, *:before, *:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+::selection{background:rgba(78,209,155,100); color:#fff;}
+::-moz-selection{background:rgba(78,209,155,100); color:#fff;}
+
+/* #Variables
+================================================== */
+span.off-screen{text-indent:-9999px; display:block; position:absolute;}
+.animated{visibility:hidden;}
+.visible{visibility:visible;}
+.navwrap{position:relative;}
+
+/* #Custom Type
+================================================== */
+h1{font-family:'Montserrat', helvetica, arial, sans-serif;} 
+h2{font-family:'Montserrat', helvetica, arial, sans-serif; font-weight:700;}
+h3{font-family:'OpenSans', helvetica, arial, sans-serif; font-weight:700;} 
+h4{font-family:"OpenSans", helvetica, arial, sans-serif; font-style:italic;} 
+p{font-family:'OpenSans', helvetica, arial, sans-serif; font-weight:400; font-size:14px;}
+hr{border-left:0; border-right:0; border-top:1px solid #fff; border-bottom:0; width:55px; margin:0 auto;}
+.mar-bot-50{margin-bottom:50px !important;}
+
+/* #Custom ahrefs
+================================================== */
+a{text-decoration:none;}
+a.fa-angle-down{text-decoration:none; display:block; margin:0 auto; border:none; color:#fff; font-size:45px;}
+a#orready{display:block; margin:auto; width:41px; height:74px; background:url(../build/orready.png) center center no-repeat; text-decoration:none; border:none;}
+.touch-device a.genmore{transition:none;}
+
+/* Header
+================================================== */
+header{width:100%; height:500px; margin:0 auto; background:#4ed19b; position:relative; display:block; overflow:hidden; text-align:center; background-size:cover; overflow:hidden;}
+header img{float:right; margin:85px 0 0 0; clear:none;}
+header .aboutBox{width:320px; margin:0 auto; float:none;}
+header .aboutBox .deck{margin:70px auto;}
+header .deck{float:left; margin:115px 0 0 50px; text-align:center;}
+header .deck i{color:#fff; font-size:45px; margin-bottom:12px;}
+header .deck h1{color:#fff; font-weight:700; font-family:'Montserrat', helvetica, arial, sans-serif; letter-spacing:2px; font-size:46px; text-transform:uppercase; margin-bottom:12px;}
+header .deck h2{font-weight:300; font-style:italic; font-family:'OpenSans',helvetica, arial, sans-serif; font-size:34px; color:#fff; margin-bottom:25px;}
+
+/* About Header
+================================================== */
+#header{width:100%; height:350px; margin:0 auto; background:#4ed19b; position:relative; display:block; overflow:hidden; text-align:center; background-size:cover; overflow:hidden;}
+#header .deck{float:none; margin:115px 0 0 0px; text-align:center;}
+#header .deck i{color:#fff; font-size:45px; margin-bottom:12px;}
+#header .deck h1{color:#fff; font-weight:700; font-family:'Montserrat', helvetica, arial, sans-serif; letter-spacing:2px; font-size:46px; text-transform:uppercase; margin-bottom:12px;}
+#header .deck h2{font-weight:300; font-style:italic; font-family:'OpenSans',helvetica, arial, sans-serif; font-size:34px; color:#fff; margin-bottom:25px;}
+
+/* About Body
+================================================== */
+section#about{margin:0 auto; position:relative; overflow:hidden; padding:85px 0; width:100%; background:#fff; text-align:center; overflow:hidden; height:auto!important;}
+section#about i{color:#242424; font-size:45px; margin-bottom:12px; float:left; line-height:8px; margin-right:5px;}
+section#about h1{color:#242424; font-size:45px; margin:0 auto 25px auto; text-align:left; text-transform:uppercase; letter-spacing:1px; font-weight:700; line-height:none; max-width:75%; line-height:8px;}
+section#about h2{font-weight:300; font-style:italic; font-family:'OpenSans',helvetica, arial, sans-serif; font-size:18px; color:#242424; text-align:left; width:75%; margin:-10px auto 20px auto;}
+section#about p{color:#242424; max-width:75%; margin:0 auto 25px auto; text-align:left;}
+section#about .grid{display:block; width:64px; height:64px; background:url(../build/gray-grid.png) center center no-repeat; margin:0 auto 50px auto;}
+section#about ul{width:75%; text-align:left; margin:0 auto 30px auto;}
+Section#about ul li{list-style: disc; margin:5px 0 5px 40px;}
+
+
+/* Mast
+================================================== */
+section#mast{margin:0 auto; position:relative; overflow:hidden; padding:85px 0; width:100%; background:#fff; text-align:center; overflow:hidden; height:auto!important;}
+section#mast h1{color:#242424; font-size:22px; margin:0 auto 25px auto; text-align:center; text-transform:uppercase; letter-spacing:1px; font-weight:700; line-height:none;}
+section#mast p{color:#242424; max-width:75%; margin:0 auto 25px auto;}
+section#mast .grid{display:block; width:64px; height:64px; background:url(../build/gray-grid.png) center center no-repeat; margin:0 auto 50px auto;}
+section#mast .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; display:block; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Patient Block
+================================================== */
+section#patient{margin:0; position:relative; width:100%; height:325px !important; padding:0; background:#fff; overflow:hidden;}
+section#patient .leftbox{float:left; width:50%; background:url(../build/consult.png) center center no-repeat; background-size:cover; display:block; position:relative; height:325px !important;}
+section#patient .rightbox{float:right; width:50%; background:url(../build/mast.png) center center no-repeat; background-size:cover; display:block; position:relative; height:325px !important; text-align:center;}
+section#patient .rightbox .content{padding:65px 25px 0 25px; text-align:center;}
+section#patient .rightbox .content h2{font-size:22px; margin:0 auto 25px auto; text-align:center; text-transform:uppercase; letter-spacing:1px; font-weight:700; line-height:none; color:#fff;}
+section#patient .rightbox .content hr{margin-bottom:25px;}
+section#patient .rightbox .content p{color:#fff;}
+section#patient .rightbox .content i.fa-stethoscope{font-size:24px; color:#fff;}
+
+/* Patient Portal Block
+================================================== */
+section#patient{margin:0; position:relative; width:100%; height:325px !important; padding:0; background:#fff; overflow:hidden;}
+section#patient .leftbox{float:left; width:50%; background:url(../build/consult.png) center center no-repeat; background-size:cover; display:block; position:relative; height:325px !important;}
+section#patient .rightbox{float:right; width:50%; background:url(../build/mast.png) center center no-repeat; background-size:cover; display:block; position:relative; height:325px !important; text-align:center;}
+section#patient .rightbox .content{padding:65px 25px 0 25px; text-align:center;}
+section#patient .rightbox .content h2{font-size:22px; margin:0 auto 25px auto; text-align:center; text-transform:uppercase; letter-spacing:1px; font-weight:700; line-height:none; color:#fff;}
+section#patient .rightbox .content hr{margin-bottom:25px;}
+section#patient .rightbox .content p{color:#fff;}
+section#patient .rightbox .content i.fa-stethoscope{font-size:24px; color:#fff;}
+/* Patient Portal Block
+================================================== */
+section#slsMain{margin:0; position:relative; width:100%; height:325px !important; padding:0; background:#fff; overflow:hidden; float:left;}
+section#slsMain .leftbox {width:50%; height:325px !important; background:url(../build/surgery.jpg) top right no-repeat; display:inline-block; background-size:cover; float:left; display:block;}
+section#slsMain	.rightbox{float:right; width:50%; height:325px;}
+section#slsMain .rightbox .textbox{width:80%; padding:55px 0 0 0; text-align:center; display:block; margin:0 auto; float:none;}
+section#slsMain .rightbox .textbox p{color:#242424;}
+section#slsMain .rightbox .textbox hr{margin-bottom:25px; border-top:1px solid #242424; }
+section#slsMain .rightbox .textbox #sls{width:100px; height:100px; display:block; margin:auto; background:url(../build/sls_logo.png) center center no-repeat; background-size:85px 85px;}
+
+
+/* Info Grid
+================================================== */
+section#infoblock{margin:0; position:relative; width:100%; height:325px !important; padding:0; background:#fff; overflow:hidden;}
+section#infoblock .leftbox{float:left; width:50%; display:block; position:relative; height:325px !important; background:#fff; overflow:hidden;}
+section#infoblock .rightbox{float:right; width:50%; display:block; position:relative; height:325px !important; background:#fff; overflow:hidden;}
+section#infoblock .leftbox .photo{width:50%; background:url(../build/nurse.jpg) top center no-repeat; height:325px !important;background-size:cover; display:inline-block; float:left;}
+section#infoblock .leftbox .textbox{width:50%; padding:55px 25px 0 25px; text-align:center; display:block; margin:0; float:left;}
+section#infoblock .leftbox .textbox p{color:#242424;}
+section#infoblock .leftbox .textbox hr{margin-bottom:25px; border-top:1px solid #242424; }
+section#infoblock .leftbox .textbox i{color:#242424; font-size:38px; margin:auto;}
+section#infoblock .rightbox .photo{width:50%; height:325px !important; background:url(../build/patientportal.jpg) top right no-repeat; display:inline-block; background-size:cover;}
+section#infoblock .rightbox .textbox{width:50%; padding:55px 25px 0 25px; text-align:center; display:block; margin:0; float:right;}
+section#infoblock .rightbox .textbox p{color:#242424;}
+section#infoblock .rightbox .textbox hr{margin-bottom:25px; border-top:1px solid #242424; }
+section#infoblock .rightbox .textbox i{color:#242424; font-size:38px; margin:auto;}
+
+/* Features
+================================================== */
+section#features{width:100%; margin:0; padding:150px 0; position:relative; overflow:hidden; background:#fff;}
+section#features h2{font-size:22px; margin:0 auto 25px auto; text-align:center; text-transform:uppercase; letter-spacing:1px; font-weight:700; line-height:none; color:#242424;}
+section#features p{color:#242424;}
+section#features .photo{width:50%; display:inline-block; float:left; text-align:right;}
+section#features .photo img{margin-right:25px;}
+section#features .photo2{width:45%; display:inline-block; float:left; text-align:right;}
+section#features .photo2 img{margin-left:0px; max-height:1170px;}
+section#features .feature{width:50%; display:inline-block; float:right; background:#fff;}
+section#features .feature .content{padding:50px 25px 25px 25px; text-align:left; margin:0;}
+section#features .feature .content h3{text-align:left; font-weight:300; font-size:22px; margin-bottom:20px;}
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after{content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0;}
+.owl-carousel{display:none; position: relative; width:100%; -ms-touch-action:pan-y;}
+.owl-carousel .owl-wrapper{display:none; position:relative; -webkit-transform:translate3d(0px, 0px, 0px);}
+.owl-carousel .owl-wrapper-outer{overflow:hidden; position:relative; width:100%;}
+.owl-carousel .owl-wrapper-outer.autoHeight{-webkit-transition: height 500ms ease-in-out; -moz-transition: height 500ms ease-in-out; -ms-transition: height 500ms ease-in-out; -o-transition: height 500ms ease-in-out; transition: height 500ms ease-in-out;}
+.owl-carousel .owl-item{float:left;}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{cursor:pointer;}
+.owl-controls{-webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+.grabbing{cursor:url(grabbing.png) 8 8, move;}
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item{-webkit-backface-visibility:hidden; -moz-backface-visibility:hidden; -ms-backface-visibility:hidden; -webkit-transform:translate3d(0,0,0); -moz-transform:translate3d(0,0,0); -ms-transform:translate3d(0,0,0);}
+
+/* ORReady
+================================================== */
+section#orready{margin:0; position:relative; width:100%; height:325px !important; padding:0; background:#fff; overflow:hidden;}
+section#orready .rightbox{float:right; width:50%; background:url(../build/doctor.jpg) center center no-repeat; background-size:cover; display:block; position:relative; height:325px !important;}
+section#orready .leftbox{float:left; width:50%; background:url(../build/mast.png) center center no-repeat; background-size:cover; display:block; position:relative; height:325px !important; text-align:center;}
+section#orready .leftbox .content{padding:65px 25px 0 25px; text-align:center;}
+section#orready .leftbox .content h2{font-size:22px; margin:0 auto 25px auto; text-align:center; text-transform:uppercase; letter-spacing:1px; font-weight:700; line-height:none; color:#fff;}
+section#orready .leftbox .content hr{margin-bottom:25px;}
+section#orready .leftbox .content p{color:#fff;}
+
+/* Contact
+================================================== */
+section#contact{width:100%; margin:0; padding:0; position:relative; overflow:hidden; background:#fff;}
+section#contact .leftbox{float:left; width:50%; background:url(../build/contact.jpg) center center no-repeat; background-size:cover; display:block; position:relative; height:495px;}
+section#contact .rightbox{float:right; width:50%; background:#fff; display:block; position:relative; height:auto!important; text-align:center;}
+section#contact .content{padding:65px 25px 0 25px; text-align:center;}
+section#contact .content hr{margin-bottom:25px;}
+section#contact .content p{color:#242424;}
+section#contact .content i.fa-envelope{font-size:34px; color:#242424; margin:0 auto 15px auto;}
+section#contact .content form{margin:0;}
+section#contact .content form input:focus, section#contact .rightbox .content form textarea:focus{border:1px solid #4ed19b; outline:none;}
+section#contact .content form input{border:1px solid #7d7d7d; background:#fff; padding:12px 18px; display:block; width:70%; margin:0 auto 7px auto; transition:all .4s ease-in;}
+section#contact .content form textarea{border:1px solid #7d7d7d; background:#fff; padding:12px 18px; min-height:110px; display:block; width:70%; margin:0 auto 7px auto; transition:all .7s ease-in;}
+section#contact .content form input.sendme{border:none; background:#4ed19b; font-family:'Montserrat',helvetica, arial, sans-serif; color:#fff; font-size:14px; text-align:center; transition:all .5s ease-in;}
+section#contact .content form input.sendme:hover{background:#232328; cursor:pointer;}
+.touch-device section#contact .content form input.sendme{transition:none;} 
+.touch-device section#contact .content form input, .touch-device section#contact .rightbox .content form textarea{transition:none;}
+section#contact.padding{padding-bottom:150px;}
+
+
+
+/* Footer
+================================================== */
+footer{width:100%; margin:0 auto; background:#282828; position:relative; text-align:center; padding:85px 0; overflow:hidden;}
+footer h3{width:53px; height:53px; background:url(../build/white-grid.png) center center no-repeat; float:right; display:block;}
+footer ul{width:265px; float:left;}
+footer ul li{ list-style:none; float:left; display:block; margin-top:10px; text-align:center; width:88px;	}
+footer ul li a{text-decoration:none; font-size:13px; color:#fff; font-family:'Montserrat', helvetica, arial, sans-serif; font-weight:700;}
+footer ul li a:hover{color:#4ed19b;}
+
+footer p{text-align:left; font-size:12px; color:#fff; line-height:auto;}
+footer span{text-transform:uppercase; color:#4ed19b;}
+
+/* base
+================================================== */
+#base{width:100%; margin:0 auto; background:#181818; position:relative; text-align:center; padding:20px 0; overflow:hidden;}
+#base p{text-align:center; font-size:12px; color:#fff; line-height:auto;}
+#base span{text-transform:uppercase; color:#4ed19b;}
+
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	section#mast .grid{background:url(../build/gray-grid@2x.png) center center no-repeat; background-size:64px 64px;}	
+	a#orready{background:url(../build/orready@2x.png) center center no-repeat; background-size:41px 74px; }	
+	footer h3{background:url(../build/white-grid@2x.png) center center no-repeat; background-size:53px 53px;}
+	}
+	
+	/* Wider Width */
+	@media only screen and (min-width: 960px) and (max-width: 1125px) {
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+	header{height:470px;}
+	header .deck i{font-size:32px;}
+	header .deck h1{font-size:31px; margin-bottom:0;}
+	header .deck h2{font-size:30px;}	
+	header .scale-with-grid{max-width:60%; height:auto; clear:none;}
+	section#patient .rightbox .content{padding:45px 25px 0 25px;}
+	section#orready .leftbox .content{padding:55px 25px 0 25px;}
+	section#infoblock .rightbox .textbox{padding:25px 25px 0 25px;}
+	section#infoblock .leftbox .textbox{padding:25px 25px 0 25px;}
+	section#contact .rightbox .content form input, section#contact .rightbox .content form textarea{width:80%;}
+	footer h3{margin-right:30px;}
+	footer p{margin-left:30px;}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+	header .deck{margin:55px auto 0 auto; float:none; width:100%;}
+	header .deck i{font-size:36px;}
+	header .deck h1{font-size:29px; margin-bottom:0;}
+	header .deck h2{font-size:28px;}
+	header img{float:none; margin:20px auto 0 auto; max-width:75%; max-height:75%;}
+	section#patient .rightbox .content{padding:25px 25px 0 25px;}	
+	section#infoblock{height:650px !important;}
+	section#infoblock .leftbox{float:none; width:100%;}
+	section#infoblock .rightbox{float:none; width:100%; display:block; clear:both;}		
+	section#features .photo{width:100%; display:block; float:none; text-align:center;}
+	section#features .photo img{margin:0 auto 0 auto;}
+	section#features .photo2{width:100%; display:block; float:none; text-align:center;}
+	section#features .photo2 img{margin:0 auto 0 auto;}
+	section#features .feature{width:100%; display:block; float:none; background:#fff;}
+	section#features .feature .content{padding:30px 25px 25px 25px; text-align:left; margin:0;}
+	section#features .feature .content h3{text-align:center; font-size:19px; margin-bottom:15px;}
+	section#contact .leftbox{float:none; width:100%; height:325px;}
+	section#contact .rightbox{float:none; width:100%;}
+	section#contact .rightbox .content{padding:65px 25px 45px 25px; text-align:center;}
+	footer p{text-align:center; margin:0 auto 25px auto;}
+	footer h3{float:none; display:block; text-align:center; margin:0 auto;}	
+	footer ul{width:264px; float:none; margin:0px auto; padding-bottom:50px;}
+	}
+	
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	header img{max-width:55%; height:auto;}
+	section#orready .leftbox .content{padding:35px 25px 0 25px;}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+	
+	header{height:565px;}
+	section#mast{padding:55px 0; height:auto!important;}	
+	section#patient .rightbox .content h2{font-size:19px; margin-bottom:10px;}
+	section#patient .rightbox .content hr{display:none;}	
+	section#patient .rightbox .content i{display:none;}		
+	section#patient .rightbox .content{padding:20px 10px 0 10px;}	
+	section#orready .leftbox .content h2{font-size:19px; margin-bottom:10px;}
+	section#orready .leftbox .content{padding:20px 10px 0 10px;}
+	section#infoblock .rightbox .textbox{padding:20px 10px 0 10px;}
+	section#contact .rightbox .content{padding:65px 25px 65px 25px; text-align:center;}
+	section#contact .rightbox .content form input, section#contact .rightbox .content form textarea{width:85%;}
+	section#slsMain .rightbox .textbox{padding:25px 0 0 0;}
+	}
+	}
