@@ -15,10 +15,10 @@ span.off-screen{text-indent:-9999px; display:block; position:absolute;}
 
 /* #Custom Type
 ================================================== */
-h1{font-family:'Montserrat', helvetica, arial, sans-serif;} 
+h1{font-family:'Montserrat', helvetica, arial, sans-serif;}
 h2{font-family:'Montserrat', helvetica, arial, sans-serif; font-weight:700;}
-h3{font-family:'OpenSans', helvetica, arial, sans-serif; font-weight:700;} 
-h4{font-family:"OpenSans", helvetica, arial, sans-serif; font-style:italic;} 
+h3{font-family:'OpenSans', helvetica, arial, sans-serif; font-weight:700;}
+h4{font-family:"OpenSans", helvetica, arial, sans-serif; font-style:italic;}
 p{font-family:'OpenSans', helvetica, arial, sans-serif; font-weight:400; font-size:14px;}
 hr{border-left:0; border-right:0; border-top:1px solid #fff; border-bottom:0; width:55px; margin:0 auto;}
 .mar-bot-50{margin-bottom:50px !important;}
@@ -169,7 +169,7 @@ section#contact .content form input{border:1px solid #7d7d7d; background:#fff; p
 section#contact .content form textarea{border:1px solid #7d7d7d; background:#fff; padding:12px 18px; min-height:110px; display:block; width:70%; margin:0 auto 7px auto; transition:all .7s ease-in;}
 section#contact .content form input.sendme{border:none; background:#4ed19b; font-family:'Montserrat',helvetica, arial, sans-serif; color:#fff; font-size:14px; text-align:center; transition:all .5s ease-in;}
 section#contact .content form input.sendme:hover{background:#232328; cursor:pointer;}
-.touch-device section#contact .content form input.sendme{transition:none;} 
+.touch-device section#contact .content form input.sendme{transition:none;}
 .touch-device section#contact .content form input, .touch-device section#contact .rightbox .content form textarea{transition:none;}
 section#contact.padding{padding-bottom:150px;}
 
@@ -200,12 +200,12 @@ footer span{text-transform:uppercase; color:#4ed19b;}
 	only screen and (     -o-min-device-pixel-ratio: 2/1),
 	only screen and (        min-device-pixel-ratio: 2),
 	only screen and (                min-resolution: 192dpi),
-	only screen and (                min-resolution: 2dppx) { 
-	section#mast .grid{background:url(../build/gray-grid@2x.png) center center no-repeat; background-size:64px 64px;}	
-	a#orready{background:url(../build/orready@2x.png) center center no-repeat; background-size:41px 74px; }	
+	only screen and (                min-resolution: 2dppx) {
+	section#mast .grid{background:url(../build/gray-grid@2x.png) center center no-repeat; background-size:64px 64px;}
+	a#orready{background:url(../build/orready@2x.png) center center no-repeat; background-size:41px 74px; }
 	footer h3{background:url(../build/white-grid@2x.png) center center no-repeat; background-size:53px 53px;}
 	}
-	
+
 	/* Wider Width */
 	@media only screen and (min-width: 960px) and (max-width: 1125px) {
 	}
@@ -215,7 +215,7 @@ footer span{text-transform:uppercase; color:#4ed19b;}
 	header{height:470px;}
 	header .deck i{font-size:32px;}
 	header .deck h1{font-size:31px; margin-bottom:0;}
-	header .deck h2{font-size:30px;}	
+	header .deck h2{font-size:30px;}
 	header .scale-with-grid{max-width:60%; height:auto; clear:none;}
 	section#patient .rightbox .content{padding:45px 25px 0 25px;}
 	section#orready .leftbox .content{padding:55px 25px 0 25px;}
@@ -233,10 +233,10 @@ footer span{text-transform:uppercase; color:#4ed19b;}
 	header .deck h1{font-size:29px; margin-bottom:0;}
 	header .deck h2{font-size:28px;}
 	header img{float:none; margin:20px auto 0 auto; max-width:75%; max-height:75%;}
-	section#patient .rightbox .content{padding:25px 25px 0 25px;}	
+	section#patient .rightbox .content{padding:25px 25px 0 25px;}
 	section#infoblock{height:650px !important;}
 	section#infoblock .leftbox{float:none; width:100%;}
-	section#infoblock .rightbox{float:none; width:100%; display:block; clear:both;}		
+	section#infoblock .rightbox{float:none; width:100%; display:block; clear:both;}
 	section#features .photo{width:100%; display:block; float:none; text-align:center;}
 	section#features .photo img{margin:0 auto 0 auto;}
 	section#features .photo2{width:100%; display:block; float:none; text-align:center;}
@@ -248,10 +248,10 @@ footer span{text-transform:uppercase; color:#4ed19b;}
 	section#contact .rightbox{float:none; width:100%;}
 	section#contact .rightbox .content{padding:65px 25px 45px 25px; text-align:center;}
 	footer p{text-align:center; margin:0 auto 25px auto;}
-	footer h3{float:none; display:block; text-align:center; margin:0 auto;}	
+	footer h3{float:none; display:block; text-align:center; margin:0 auto;}
 	footer ul{width:264px; float:none; margin:0px auto; padding-bottom:50px;}
 	}
-	
+
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 	header img{max-width:55%; height:auto;}
@@ -260,13 +260,13 @@ footer span{text-transform:uppercase; color:#4ed19b;}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-	
+
 	header{height:565px;}
-	section#mast{padding:55px 0; height:auto!important;}	
+	section#mast{padding:55px 0; height:auto!important;}
 	section#patient .rightbox .content h2{font-size:19px; margin-bottom:10px;}
-	section#patient .rightbox .content hr{display:none;}	
-	section#patient .rightbox .content i{display:none;}		
-	section#patient .rightbox .content{padding:20px 10px 0 10px;}	
+	section#patient .rightbox .content hr{display:none;}
+	section#patient .rightbox .content i{display:none;}
+	section#patient .rightbox .content{padding:20px 10px 0 10px;}
 	section#orready .leftbox .content h2{font-size:19px; margin-bottom:10px;}
 	section#orready .leftbox .content{padding:20px 10px 0 10px;}
 	section#infoblock .rightbox .textbox{padding:20px 10px 0 10px;}
