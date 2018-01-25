@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>SafeStart | Surgical Safety System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+        <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+        <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+
+        <!-- SCRIPTS -->
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+        <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+        <script src="js/superfish.min.js" type="text/javascript"></script>
+        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+        <script src="js/owl.carousel.js" type="text/javascript"></script>
+        <script src="js/animate.js" type="text/javascript"></script>
+        <script src="js/jquery.BlackAndWhite.js"></script>
+        <script src="js/myscript.js" type="text/javascript"></script>
+        <script>
+
+            //PrettyPhoto
+            jQuery(document).ready(function () {
+                $("a[rel^='prettyPhoto']").prettyPhoto();
+            });
+
+            //BlackAndWhite
+            $(window).load(function () {
+                $('.client_img').BlackAndWhite({
+                    hoverEffect: true, // default true
+                    // set the path to BnWWorker.js for a superfast implementation
+                    webworkerPath: false,
+                    // for the images with a fluid width and height 
+                    responsive: true,
+                    // to invert the hover effect
+                    invertHoverEffect: false,
+                    // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+                    intensity: 1,
+                    speed: {//this property could also be just speed: value for both fadeIn and fadeOut
+                        fadeIn: 300, // 200ms for fadeIn animations
+                        fadeOut: 300 // 800ms for fadeOut animations
+                    },
+                    onImageReady: function (img) {
+                        // this callback gets executed anytime an image is converted
+                    }
+                });
+            });
+
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-112760395-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+
+    </head>
+    <body>
+
+        <!-- PRELOADER -->
+        <img id="preloader" src="images/preloader.gif" alt="" />
+        <!-- //PRELOADER -->
+        <div class="preloader_hide">
+
+            <!-- PAGE -->
+            <div id="page">
+
+                <!-- HEADER -->
+                <header>
+
+                    <!-- MENU BLOCK -->
+                    <div class="menu_block">
+
+                        <!-- CONTAINER -->
+                        <div class="container clearfix">
+
+                            <!-- LOGO -->
+                            <div class="logo pull-left">
+                                <a href="index.html" >
+                                    <i class="fa fa-check-circle-o"></i>
+                                    <h1 tile="Safetstart Medical Checklist Application">SAFESTART</h1>
+                                </a>
+                            </div><!-- //LOGO -->
+
+                            <!-- SEARCH FORM -->
+                            <!--					<div id="search-form" class="pull-right">
+                                                                            <form method="get" action="#">
+                                                                                    <input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+                                                                            </form>
+                                                                    </div> SEARCH FORM -->
+
+                            <!-- MENU -->
+                            <div class="pull-right">
+                                <div class="navmenu btns-nav-menu right">
+                                    <ul>
+                                        <li class="first active scroll_btn">
+                                            <a href="login">Login</a>
+                                        </li>
+                                        <li class="scroll_btn btns-nav-menu-demo">
+                                            <a href="login">Request a Demo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <nav class="navmenu center">
+                                    <ul>
+                                        <li class="sub-menu">
+                                            <a href="javascript:void(0);" >Who We Serve</a>
+                                            <ul>
+                                                <li><a href="hospitals.html" >Hospitals</a></li>
+                                                <li><a href="surgery_centers.html" >Surgery Centers</a></li>
+                                            </ul>
+                                        </li>                                        <li class="scroll_btn"><a href="about.html" >About Us</a></li>
+                                        <li class="scroll_btn"><a href="#projects" >Resources</a></li>
+                                        <li class="scroll_btn"><a href="contact.html" >Contact</a></li>                                               
+                                    </ul>
+                                </nav>
+                            </div><!-- //MENU -->
+                        </div><!-- //MENU BLOCK -->
+                    </div><!-- //CONTAINER -->
+                </header><!-- //HEADER -->
+
+
+                <!-- HOME -->
+                <section id="home" class="padbot0">
+
+                    <!-- TOP SLIDER -->
+                    <div class="flexslider top_slider top_slider_hospitals">
+                        <ul class="slides">
+                            <li class="slide1">
+                                <div class="flex_caption1">
+                                    <h1 class="text-agin-center">
+                                        <p class="title2 captionDelay4 FromTop">Terms of Use</p>
+                                    </h1>
+                                </div>
+                                <!--						<a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
+                            <li class="slide2">
+                                <div class="flex_caption1">
+                                    <h1 class="text-agin-center">
+                                        <p class="title2 captionDelay4 FromTop">Terms of Use</p>
+                                    </h1>
+                                </div>
+                                <!--                                <a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
+                            </li>
+                            <li class="slide3">
+                                <div class="flex_caption1">
+                                    <h1 class="text-agin-center">
+                                        <p class="title2 captionDelay4 FromTop">Terms of Use</p>
+                                    </h1>
+                                </div>
+                                <!--                                <a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
+
+                                <!-- VIDEO BACKGROUND -->
+                                <a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
+                                <!-- //VIDEO BACKGROUND -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!--                    <div id="carousel">
+                                            <ul class="slides">
+                                                <li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+                                                <li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
+                                                <li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+                                            </ul>
+                                        </div> -->
+                    <!-- //TOP SLIDER -->
+                </section><!-- //HOME -->
+
+                <!-- Contact Form -->
+                <section id="team-members">
+                    <div class="container">
+                        <h1 class="team-title">Terms of Use</h1>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12 text-align-left">
+                                <p class="last-modified">Last Modified: March 12, 2015</p>
+
+                                <p>Thank you for using SafeStart; The Service that Single Point of Truth, LLC 
+                                    provides to you is subject to the following Terms of Service ("Terms").</p>
+
+                                <p>These Terms constitute a legal agreement between you and Single Point of Truth, LLC
+                                    and its successors, parents, subsidiaries, affiliates and related companies or
+                                    other companies under a common control that we may have now or in the future
+                                    operate ("SafeStart," "we," "our" or "us"). As used in these Terms, the
+                                    words "you" and "your" refer to you, the user of the SafeStart Service. The
+                                    use of the word "including" in these Terms is used to refer to specific
+                                    examples will be construed to mean "including, without limitation" or
+                                    "including but not limited to" and will not be construed to mean that the
+                                    examples given are an exclusive list of the topics covered. These Terms apply
+                                    to the SafeStart website and mobile applications (the "Site") and the
+                                    asynchronous telemedicine communication service we offer on the Site (together
+                                    with the Site, the "Service"). These Terms govern your access to and use of the
+                                    Service, so please carefully read them before using the Service.</p>
+
+                                <p>By using the Services you agree to be bound by these Terms. If you are using
+                                    the Services on behalf of an organization, you are agreeing to these Terms for
+                                    that organization and promising that you have the authority to bind that
+                                    organization to these terms. In that case, "you" and "your" will refer to that
+                                    organization.</p>
+
+                                <p>The following is a brief summary of these Terms:</p>
+
+                                <p>- The Terms describe your rights and responsibilities in connection with
+                                    your use of the Service.</p>
+
+                                <p>- We will only use content that you enter to the extent necessary to provide you with
+                                    the Service.</p>
+
+                                <p>- Protecting your content is very important to us. We endeavor to keep your
+                                    content secure against unauthorized access and disclosure using a variety of
+                                    authentication and security processes and procedures.</p><br>
+
+                                <h4><b>Medical Professional-Patient Relationship Terms</b></h4>
+
+                                <p>The Service is a tool to facilitate the creation of a patient's personal
+                                    health record and/or facilitate secure asynchronous
+                                    communication between a medical patient and his or her existing team of Medical
+                                    Professionals. By accepting the Terms, the patient and Medical Professional
+                                    agree to this.</p>
+
+                                <p>For purposes of sharing medical information between a Medical
+                                    Professionals:</p>
+
+                                <ul>
+                                    <li>A Medical Professional adds a patient to the Medical Professional's
+                                        SafeStart account.</li>
+                                </ul>
+
+                                <p>Once data is shared with the Medical Professional, it will remain shared
+                                    between the Medical Professionals.</p>
+
+                                <p>If at any time you are concerned about your, or your child's, care or the
+                                    treatment prescribed by a healthcare professional through the Service, or you
+                                    believe or someone else advises you that you or your child has or suspect that
+                                    you or your child has a serious or life-threatening condition, call 911 in
+                                    areas in which that service is available or go to the nearest emergency room or
+                                    open clinic.</p><br>
+
+                                <h4><b>User Agreement to Sharing</b></h4>
+
+                                <p>You authorize SafeStart to share the health information contained in patient's
+                                    SafeStart profile, in part or in its entirety, with those entities and
+                                    individuals, and colleagues for the purpose of medical
+                                    treatment.</p><br>
+
+                                <h4><b>User Agreement to Sharing - Minor Patient</b></h4>
+
+                                <p>If the patient is under the age of 18, SafeStart requires you to have the
+                                    legal right to make health care related decisions on behalf of the minor
+                                    patient. In using the service you certify that you are authorized by law to
+                                    make health care related decisions on behalf of the minor patient including
+                                    having the right to upload imagery of the minor patient to assist the
+                                    physician's diagnosis and treatment of the minor patient.</p><br>
+
+                                <h4><b>Acceptance of Terms</b></h4>
+
+                                <p>By either (1) clicking to agree or accept to these Terms where these options
+                                    are presented to you, or (2) following your initial acceptance of terms during
+                                    account creation, actually using or accessing the Site or any part of the
+                                    Service, you signify your agreement to be bound by these Terms and all other
+                                    policies or notices posted by us on the Site. Your use of the Service is also
+                                    governed by the SafeStart Business Associate Agreement, Privacy Policy,
+                                    Security Policy and Acceptable Use Policy - all of which are incorporated by
+                                    reference into these Terms.</p>
+
+                                <p>If you don't agree to these Terms, do not use the Service. You agree that
+                                    your use of the Service will always be subject to the most current version of
+                                    these Terms at the time of such use. It is your responsibility to review these
+                                    Terms from time to time for any changes. If you use the Service after we have
+                                    changed any of the Terms, you are agreeing to all of the changes. Again, if you
+                                    do not agree, do not use the Service.</p>
+
+                                <p>You may not use the Service and you may not accept these Terms if you are
+                                    not at least 18 years of age and, in any event, of a legal age to form a
+                                    binding contract with SafeStart.</p>
+
+                                <p>If you accept these Terms, you represent that you have the power to form a
+                                    contract with SafeStart and be bound by these Terms.</p>
+
+                                <p>Depending on your activities when visiting the Site or using the Service,
+                                    you may be required to agree to additional terms and conditions as indicated on
+                                    the Site or via the Service.</p><br>
+
+                                <h4><b>Privacy and Protection of Personal Information</b></h4>
+
+                                <p>In addition to these Terms, SafeStart has established a Privacy Policy to
+                                    explain how we collect and use information about you. You can review the
+                                    Privacy Policy below. The Privacy Policy is incorporated by reference into
+                                    these Terms.</p>
+
+                                <h4><b>Patient Responsibilities</b></h4>
+
+                                <p>It is the responsibility of the patient to follow the advice of their
+                                    Medical Professional and arrange any and all follow up in-office or online
+                                    communication that is requested by the Medical Professional. If a follow up
+                                    appointment is requested and the patient does not either schedule or maintain
+                                    the appointment, or even if the patient does follow up, SafeStart is not
+                                    liable for any delay in diagnosis or treatment.</p>
+
+                                <p>This site does not provide medical or any other health care advice,
+                                    diagnosis or treatment. Always seek the advice of your Medical Professional or
+                                    other qualified health provider with any questions you may have regarding a
+                                    medical condition, diet, fitness or wellness program. Never disregard
+                                    professional medical advice or delay in seeking it because of information you
+                                    accessed on or through the service.</p>
+
+                                <p>Files and other content in the Service may be protected by intellectual
+                                    property rights of others. You agree not to copy, upload, download, or share
+                                    files unless you have the right to do so. You, not SafeStart, will be fully
+                                    responsible and liable for what you share, upload or otherwise use while using
+                                    the Service. You will not upload spyware or any other malicious software to the
+                                    Service.</p>
+
+                                <p>We claim ownership of the content you submit through the Service.
+                                    We also don't control, verify, or endorse
+                                    the content that you and others make available through the Service. While we
+                                    assume no responsibility to monitor content that you and others make available,
+                                    we retain the right to remove any content at our discretion.</p><br>
+
+                                <h4><b>Member Account, Password and Security</b></h4>
+
+                                <p>The Service requires you to register by creating a user account. You must
+                                    complete the registration process by providing your HCP with current, complete and
+                                    accurate information. This
+                                    means that you may not set up an account using someone else's name or contact
+                                    information, unless you are a parent or legal guardian setting up and
+                                    maintaining an account for your child, and in no event may you set up an
+                                    account using a phony name or phony contact information. You also will be
+                                    required to choose a password and/or a PIN. You are entirely responsible for
+                                    safeguarding your password, PIN, and account, and you agree not to disclose
+                                    your login information to any third party. Furthermore, you are entirely
+                                    responsible for any and all activities that occur under your account, whether
+                                    or not you authorized that activity. You agree to notify SafeStart
+                                    immediately of any unauthorized use of your account or any other breach of
+                                    security, by sending an email to contact@safestartmedical.com.</p>
+
+                                <p>SafeStart will not be liable for any loss that you may incur as a result
+                                    of someone else using your password, PIN or account, either with or without
+                                    your knowledge. However, you could be held liable for losses incurred by
+                                    SafeStart or another party due to someone else using your account, PIN or
+                                    password. You may not use anyone else's account at any time, without the
+                                    permission of the account holder. You may not transfer your account to someone
+                                    else. You will be liable for losses and damages incurred by us (or anyone else)
+                                    due to the unauthorized use of your account. 
+                                </p><br>
+
+                                <h4><b>Health Care Communication</b></h4>
+
+                                <p>AS A PATIENT: It is your duty to provide true, accurate, current and
+                                    complete personal information, including your current contact information and
+                                    medical records, which are necessary for us to provide the Service to you.</p>
+
+                                <p>You must not make any misrepresentations in the information you provide to
+                                    SafeStart or your team of Medical Professionals. In order for the Service to
+                                    function effectively, you must also keep your account information up-to-date
+                                    and accurate.</p>
+
+                                <p>In addition to these Terms, SafeStart has established an Acceptable Use
+                                    Policy, which governs the acceptable use of the Site and the Service. Please
+                                    find a copy of this Policy at https://dev.patients.safestartmedical.com/use. The Acceptable Use
+                                    Policy is incorporated by reference into these Terms.</p><br>
+
+                                <h4><b>Submitted Information</b></h4>
+
+                                <p>You warrant and represent to us that you either own all the information you
+                                    are submitting or have the right to submit the information. Furthermore, you
+                                    warrant and represent that you have the right to allow us to make your
+                                    information available to our employees and agents to view and use in connection
+                                    with providing the Service without requiring that any such use be subject to
+                                    additional obligations or terms.</p><br>
+
+                                <h2 class="big-title">LEGAL NOTICES</h2><br>
+
+                                <h4><b>Modifications</b></h4>
+
+                                <p>We may revise these Terms from time to time and the most current version
+                                    will always be posted on our website. We may communicate revisions to these
+                                    Terms to you via email to the email address associated with your account or via
+                                    notices displayed on the Site. By continuing to access or use the Service after
+                                    revisions become effective, you agree to be bound by the revised Terms. If you
+                                    do not agree to the new terms, please stop using the Service.</p><br>
+
+                                <h4><b>Miscellaneous Legal Terms</b></h4>
+
+                                <p>These Terms, together with any additional terms and conditions as indicated
+                                    on the Site or via the Service, constitute the entire and exclusive agreement
+                                    between you and SafeStart with respect to the Service, and supersede and
+                                    replace any other agreements, terms and conditions applicable to the Service.
+                                    These Terms create no third party beneficiary rights. SafeStart's failure to
+                                    enforce a provision is not a waiver of its right to do so later. If a provision
+                                    is found unenforceable, the remaining provisions of the Agreement will remain
+                                    in full effect and an enforceable term will be substituted reflecting our
+                                    intent as closely as possible. You may not assign any of your rights in these
+                                    Terms, and any such attempt is void, but SafeStart may assign its rights
+                                    without restriction. SafeStart and you are not legal partners or agents;
+                                    instead, our relationship is that of independent contractors.</p><br>
+
+                                <h4><b>SafeStart Property</b></h4>
+
+                                <p>These terms do not grant you any right, title, or interest in the Service,
+                                    Site, or the content in the Service. The Software and other technology
+                                    we use to provide the Service are protected by applicable intellectual property
+                                    and other laws.</p>
+
+                                <p>If you give feedback on the Service, such as recommendations for
+                                    improvements or features, you hereby assign to SafeStart all right, title
+                                    and interest in and to such feedback, and that feedback may be implemented as
+                                    part of the Service without compensation to you.</p>
+
+                                <p>All brand, product and service names and other brand features used in the
+                                    Service that identify SafeStart or the Service are the trademarks or service
+                                    marks of SafeStart or its licensors. Nothing in the Service or these Terms
+                                    shall be deemed to confer on any person any license or right on the part of
+                                    SafeStart or any licensor with respect to any such brand features.</p><br>
+
+                                <h4><b>Warranty Disclaimer</b></h4>
+
+                                <p>USE OF THE SERVICE IS AT YOUR OWN RISK. THE SERVICE ARE PROVIDED ON AN "AS
+                                    IS," "WHERE IS" AND "AS AVAILABLE" BASIS. SAFESTART AND ITS AFFILIATES,
+                                    SUPPLIERS AND PARTNERS EXPRESSLY DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER
+                                    EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+                                    TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                                    NON-INFRINGEMENT.</p>
+
+                                <p>SAFESTART AND ITS AFFILIATES, SUPPLIERS AND PARTNERS MAKE NO WARRANTY,
+                                    REPRESENTATION OR PROMISE THAT (A) THE SERVICE WILL MEET YOUR REQUIREMENTS; (B)
+                                    THE SERVICE WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE; OR (C) THAT
+                                    THERE WILL BE NO ERRORS IN THE SERVICE. ANYTHING OBTAINED THROUGH USE OF THE
+                                    SERVICE IS OBTAINED AT YOUR OWN DISCRETION AND RISK AND SAFESTART SHALL NOT
+                                    BE RESPONSIBLE FOR ANY DAMAGE CAUSED TO YOUR COMPUTER OR DATA OR FOR ANY BUGS,
+                                    VIRUSES, TROJAN HORSES OR OTHER DESTRUCTIVE CODE, OR FOR ANY OTHER LOSSES YOU
+                                    MAY INCUR, RESULTING FROM YOUR USE OF THE SERVICE.</p>
+
+                                <p>SOME STATES DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE
+                                    EXCLUSION MAY NOT APPLY TO YOU. YOU MAY ALSO HAVE OTHER LEGAL RIGHTS, WHICH
+                                    VARY FROM STATE TO STATE.</p><br>
+
+                                <h4><b>Limitation of Liability</b></h4>
+
+                                <p>TO THE FULLEST EXTENT PERMITTED BY LAW, (A) IN NO EVENT WILL SAFESTART,
+                                    OR ITS AFFILIATES, DIRECTORS, OFFICERS, INVESTORS, EMPLOYEES, AGENTS,
+                                    ADVERTISERS, LICENSORS, SUPPLIERS, OR SERVICE PROVIDERS, BE LIABLE FOR ANY
+                                    INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, EXEMPLARY OR CONSEQUENTIAL DAMAGES
+                                    (INCLUDING WITHOUT LIMITATION LOSS OF USE, DATA, BUSINESS, OR PROFITS),
+                                    REGARDLESS OF LEGAL THEORY, WHETHER OR NOT SAFESTART HAS BEEN WARNED OF THE
+                                    POSSIBILITY OF SUCH DAMAGES, AND EVEN IF A REMEDY FAILS OF ITS ESSENTIAL
+                                    PURPOSE; AND (B) SAFESTART'S TOTAL LIABILITY TO YOU FOR DAMAGES, LOSSES, AND
+                                    CAUSES OF ACTION UNDER ANY THEORY OF LIABILITY SHALL IN NO EVENT EXCEED
+                                    $100.</p><br>
+
+                                <h4><b>Indemnity</b></h4>
+
+                                <p>You agree to indemnify, defend, and hold harmless SafeStart, its
+                                    affiliates and their respective directors, officers, employees and agents from
+                                    and against any losses, costs, damages, liabilities and expenses (including
+                                    reasonable attorneys' fees) arising out of any claims, actions, suits or
+                                    proceedings related to your use of the Service, your violation of these Terms
+                                    or of any rights of any third party, or any content or other information you
+                                    submit to the Service. Your indemnification obligation will survive the
+                                    termination of these Terms and your use of the Service.</p><br>
+
+                                <h4><b>Termination and Suspension</b></h4>
+
+                                <p>We may terminate or suspend your permission to use the Service immediately
+                                    and without notice upon any violation of these Terms, your failure to pay any
+                                    fees when due, upon the request of law enforcement or government agencies,
+                                    after extended periods of inactivity, for unexpected technical issues or
+                                    problems, or in the event you engage in fraudulent or illegal activities. We
+                                    also reserve the right to refuse, restrict, discontinue or terminate the
+                                    Service (or any portions, components or features of the Service) to you or any
+                                    other person or entity, for any reason or for no reason whatsoever, at any
+                                    time, without notice or liability. If we terminate your use of the Service for
+                                    any of these reasons or otherwise for cause, we will not refund any fees you
+                                    may have paid.</p><br>
+
+                                <h4><b>Availability</b></h4>
+
+                                <p>You acknowledge that temporary interruptions in the availability of the
+                                    Service may occur from time to time, including the malfunction of equipment,
+                                    periodic updating, maintenance or repair of the Service or other actions that
+                                    SafeStart, in its sole discretion, may elect to take. Under no circumstances
+                                    will SafeStart be held liable for any damages due to such interruptions or
+                                    lack of availability.</p><br>
+
+                                <h4><b>ADDITIONAL TERMS</b></h4>
+
+                                <p>Portions of the Service may be accompanied by additional terms that apply to
+                                    specific features or areas of the Service. Those additional terms supplement
+                                    these terms with respect to your use of those features or areas. (e.g.
+                                    Authorized Use Policy, Privacy Policy, and Guardian Authorization)</p><br>
+
+                                <h4><b>Governing Law and Dispute Resolution</b></h4>
+
+                                <p>These Terms are governed by laws of the state of Illinois, without respect
+                                    to its conflict of laws principles. The sole jurisdiction and venue for any
+                                    claim arising from the Service and these Terms shall be the state and federal
+                                    courts located in Chicago, Illinois and each party hereby consents to
+                                    the exclusive jurisdiction and venue of such courts.</p>
+
+                                <p>You agree that if you want to bring a legal claim against us under these
+                                    Terms, you must file your claim lawsuit within one year after the date on which
+                                    you discovered or reasonably should have discovered the event that gave rise to
+                                    your claim.</p>
+
+                                <p>TO THE EXTENT PERMITTED BY LAW, THE PARTIES AGREE THAT ANY DISPUTE
+                                    RESOLUTION PROCEEDINGS, WHETHER IN ARBITRATION OR IN COURT, WILL BE CONDUCTED
+                                    ONLY ON AN INDIVIDUAL BASIS AND NOT IN A CLASS OR REPRESENTATIVE ACTION OR AS A
+                                    NAMED OR UNNAMED MEMBER IN A CLASS, CONSOLIDATED, REPRESENTATIVE OR PRIVATE
+                                    ATTORNEY GENERAL ACTION, UNLESS BOTH YOU AND SAFESTART SPECIFICALLY AGREE TO
+                                    DO SO IN WRITING.</p>
+
+                                <p>If you do not wish to be bound by the foregoing class-action waiver, you
+                                    must notify SafeStart in writing within 30 days of the date that you accept
+                                    these Terms. Your written notification must be mailed to: Single Point of Truth, LLC,
+                                    ATTN: legal 211 East Ontario, Suite 1195, Chicago, IL 60611.</p><br>
+
+                                <h4><b>Notices</b></h4>
+
+                                <p>Notices to you may be sent via email or provided through links displayed on
+                                    the Site. You understand and agree that notices and other information
+                                    ("Communications") may be provided by SafeStart to you by electronic means
+                                    (i.e., via email or by posting the information on the Site). The categories of
+                                    Communications that may be provided by electronic means include:</p>
+
+                                <ul>
+                                    <li>These Terms and any amendments, modifications, or supplements;</li>
+
+                                    <li>Any breach notifications, as required under HIPAA;</li>
+
+                                    <li>Disclosures or notices provided in connection with the Service,
+                                        including any required by federal or state law (including initial
+                                        disclosures, periodic statements, initial and revised privacy notices;
+                                        opt-out notices and change-in-terms notices);</li>
+
+                                    <li>Any other communication related to the Service.</li>
+                                </ul>
+
+                                <p>All Communications will be deemed to have been received by you after it is
+                                    posted on the site for 5 days, whether or not you have retrieved the
+                                    Communication from the Site. An electronic Communication by email is considered
+                                    to be sent at the time that it is directed by SafeStart's email server to
+                                    your email address, whether or not your receive it. You agree that these are
+                                    reasonable procedures for sending and receiving electronic Communications.</p>
+
+                                <p>You agree to promptly update your account records with SafeStart if your
+                                    email address changes so that SafeStart may contact you electronically. You
+                                    understand and agree that if we send you an electronic Communication but you do
+                                    not receive it because the email address on file is incorrect, out of date,
+                                    blocked by your service provider or you are otherwise unable to receive
+                                    electronic Communications, SafeStart will be deemed to have provided the
+                                    Communication to you.</p>
+
+                                <p>Although we reserve the right to provide Communications in paper format at
+                                    any time, you agree that we are under no obligation to do so. All
+                                    Communications in either electronic or paper format will be considered to be
+                                    "in writing." You should print a paper copy of these Terms and any
+                                    Communication that is important to you and retain the copy for your records. If
+                                    you do not wish to receive these Terms or the Communications electronically,
+                                    you may not use the Service.</p>
+
+                                <p>If you have opened an account with us and you wish to withdraw your consent
+                                    to have Communications provided electronically, you must close your account and
+                                    stop using the Service. There are no fees to close your account, but a return
+                                    data-handling fee may apply.</p><br>
+
+                                <h4><b>Contact Us:</b></h4>
+
+                                <p>If you would like to contact us to provide feedback, comments or requests
+                                    for technical support, you should contact us through our customer support
+                                    department at contact@safestartmedical.com</p>
+
+                                <p>The below, Business Associate Agreement, binds only Covered Entities,
+                                    including Medical Professionals and the health care organization to which they
+                                    belong. The Business Associate Agreement does not apply to Users who are
+                                    patients.</p>
+
+                                <p>This is the standard Business Associate Agreement (BAA) that SafeStart
+                                    offers to all Covered Entity Users. We are willing to negotiate terms of the
+                                    Business Associate Agreement with any Covered Entity. In order to negotiate new
+                                    terms to a BAA, we are willing to do so at an appropriate fee of no less than USD $5000.</p>
+
+                                <p>We recognize that many Covered Entities have their own contracting
+                                    requirements, and that our click-through BAA is not a one-size-fits-all
+                                    document. We offer the ability for customers to negotiate our standard form BAA
+                                    with us, within certain boundaries and on the terms and conditions set forth
+                                    below. We will aim to be as flexible as we can, but we also recognize that,
+                                    because of the wide variance in risk tolerances and different sensitivities
+                                    attached to different types of health information, our product, and the terms
+                                    under which it is offered, will not be suitable for all organizations. Subject
+                                    to the payment of the $3,000 non-refundable fee, we will engage in good faith
+                                    negotiations with you to put in place a BAA specific to your entity. However,
+                                    as with any contractual negotiations, we cannot guarantee that an agreement
+                                    will be reached.</p>
+
+                                <p>Email: contact@safestartmedical.com for further information.</p><br>
+
+                                <p class="last-modified">Last Modified: March 12, 2015</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //Contact Form -->
+                <!-- COPYRIGHT -->
+                <section class="darkbox copyright-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>&COPY; 2018 SAFESTART MEDICAL, INC. &nbsp;&nbsp;&nbsp; <a class="color_light_black" href="privacy_policy.html">Privacy Policy</a> &nbsp;&nbsp;&nbsp; <a class="color_light_black" href="terms_of_use.html">Terms of use</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //COPYRIGHT -->
+            </div><!-- //PAGE -->
+
+            <!-- CONTACTS -->
+            <section id="contacts">
+            </section><!-- //CONTACTS -->
+
+            <!-- FOOTER -->
+            <footer>
+
+                <!-- CONTAINER -->
+                <div class="container">
+
+                    <!-- ROW -->
+                    <div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 padbot30">
+                            <h4 class="safestart-footertext">SAFESTART</h4>
+                            <p>211 E. Ontario St. Suit 1195 Chicago, IL 60611</p>
+                        </div>
+
+                        <div class="col-lg-9 col-md-9 col-sm-9 padbot30 foot_about_block">
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <h4>WHO WE SERVE</h4>
+                                <p><a href="hospitals.html">Hospitals</a></p>
+                                <p><a href="surgery_centers.html">Surgery Centers</a></p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <h4>RESOURCES</h4>
+                                <p><a href="#">News</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <h4>COMPANY</h4>
+                                <p><a href="about.html">About Us</a></p>
+                                <p><a href="contact.html">Contact</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <h4>FOLLOW US</h4>
+                                <p><a href="https://twitter.com/safestartmed">Twitter</a></p>
+                                <p><a href="https://web.facebook.com/SafeStart-Medical-769286666495337/">Facebook</a></p>
+                                <p><a href="https://www.linkedin.com/company/10692304/">LinkedIn</a></p>   
+                                <p style="margin-top: 10px;"><a href="https://itunes.apple.com/us/app/safestart-2/id1216818735?mt=8"><img src="images/android-white.png"></a></p>
+                                <p style="margin-top: 10px;"><a href="https://play.google.com/store/apps/details?id=com.safestartmedical.safestart2"><img src="images/apple-white.png"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //CONTAINER -->
+            </footer><!-- //FOOTER -->
+
+
+            <!-- MAP -->
+            <div id="map">
+                <a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+                <iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+            </div><!-- //MAP -->
+
+        </div>
+    </body>
+</html>
