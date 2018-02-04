@@ -39,6 +39,7 @@ jQuery(document).ready(function () {
         jQuery('#advisory-4').hide();
         jQuery('#advisory-5').hide();
         jQuery('#advisory-6').hide();
+        jQuery('#advisory-7').hide();
         jQuery('#advisory-' + advisoryno).show();
     });
 });
@@ -187,10 +188,10 @@ $(document).ready(function () {
     owl.owlCarousel({
         navigation: true,
         pagination: false,
-        items: 6,
+        items: 4,
         navigationText: ["<img src='images/slider/team_left.jpg'>", "<img src='images/slider/team_right.jpg'>"],
-        itemsDesktop: [1000, 6],
-        itemsDesktop: [600, 4]
+        itemsDesktop: [1000, 4],
+        itemsDesktop: [600, 3]
     });
 
 

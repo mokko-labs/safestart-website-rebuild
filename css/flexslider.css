@@ -318,7 +318,49 @@ html[xmlns] .slides {display: block;}
 }
 .top_slider_hospitals .slide1 {
 	height:100%;
-	background-image:url(../images/slider/consult.png);
+	background-image:url('../images/slider/SafeStart_Hospitals.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_terms_of_use .slide1 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Terms of Use.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_surgery_centers .slide1 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Surgery Centers.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_privacy_policy .slide1 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Privacy Policy.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_contact .slide1 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Contact Us.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_about .slide1 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_About Us.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_pediatric .slide1 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Pediatric Surgery.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_videos .slide1 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Videos.jpg');
 	background-size:cover;
 	background-attachment:fixed !important;
 }
@@ -351,7 +393,49 @@ html[xmlns] .slides {display: block;}
 }
 .top_slider_hospitals .slide2 {
 	height:100%;
-	background-image:url(../images/slider/consult.png);
+	background-image:url('../images/slider/SafeStart_Hospitals.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+} 
+.top_slider_terms_of_use .slide2 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Terms of Use.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+} 
+.top_slider_surgery_centers .slide2 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Terms of Use.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_privacy_policy .slide2 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Privacy Policy.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_contact .slide2 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Contact Us.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_about .slide2 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_About Us.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_pediatric .slide2 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Pediatric Surgery.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_videos .slide2 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Videos.jpg');
 	background-size:cover;
 	background-attachment:fixed !important;
 } 
@@ -383,9 +467,51 @@ html[xmlns] .slides {display: block;}
 }
 .top_slider_hospitals .slide3 {
 	height:100%;
-	background-image:url(../images/slider/consult.png);
+	background-image:url('../images/slider/SafeStart_Hospitals.jpg');
 	background-size:cover;
 	background-repeat:no-repeat;
+} 
+.top_slider_terms_of_use .slide3 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Terms of Use.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+} 
+.top_slider_surgery_centers .slide3 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Terms of Use.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.top_slider_privacy_policy .slide3 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Privacy Policy.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_contact .slide3 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Contact Us.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_about .slide3 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_About Us.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_pediatric .slide3 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Pediatric Surgery.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
+}
+.top_slider_videos .slide3 {
+	height:100%;
+	background-image:url('../images/slider/SafeStart_Videos.jpg');
+	background-size:cover;
+	background-attachment:fixed !important;
 } 
 .top_slider .slide3 .flex_caption1 {
 	position:absolute;
