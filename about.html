@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <title>SafeStart | Surgical Safety System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <!-- CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+        <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+        <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+
+        <!-- SCRIPTS -->
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+        <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+        <script src="js/superfish.min.js" type="text/javascript"></script>
+        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+        <script src="js/owl.carousel.js" type="text/javascript"></script>
+        <script src="js/animate.js" type="text/javascript"></script>
+        <script src="js/jquery.BlackAndWhite.js"></script>
+        <script src="js/myscript.js" type="text/javascript"></script>
+        <script>
+
+            //PrettyPhoto
+            jQuery(document).ready(function () {
+                $("a[rel^='prettyPhoto']").prettyPhoto();
+            });
+
+            //BlackAndWhite
+            $(window).load(function () {
+                $('.client_img').BlackAndWhite({
+                    hoverEffect: true, // default true
+                    // set the path to BnWWorker.js for a superfast implementation
+                    webworkerPath: false,
+                    // for the images with a fluid width and height 
+                    responsive: true,
+                    // to invert the hover effect
+                    invertHoverEffect: false,
+                    // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+                    intensity: 1,
+                    speed: {//this property could also be just speed: value for both fadeIn and fadeOut
+                        fadeIn: 300, // 200ms for fadeIn animations
+                        fadeOut: 300 // 800ms for fadeOut animations
+                    },
+                    onImageReady: function (img) {
+                        // this callback gets executed anytime an image is converted
+                    }
+                });
+            });
+
+        </script>
+        <!-- Google Analytics -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-112760395-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+
+    </head>
+    <body>
+
+        <!-- PRELOADER -->
+        <img id="preloader" src="images/preloader.gif" alt="" />
+        <!-- //PRELOADER -->
+        <div class="preloader_hide">
+
+            <!-- PAGE -->
+            <div id="page">
+
+                <!-- HEADER -->
+                <header>
+
+                    <!-- MENU BLOCK -->
+                    <div class="menu_block">
+
+                        <!-- CONTAINER -->
+                        <div class="container clearfix">
+
+                            <!-- LOGO -->
+                            <div class="logo pull-left">
+                                <a href="index.html" >
+                                    <i class="fa fa-check-circle-o"></i>
+                                    <h1 tile="Safetstart Medical Checklist Application">SAFESTART</h1>
+                                </a>
+                            </div><!-- //LOGO -->
+
+                            <!-- SEARCH FORM -->
+                            <!--					<div id="search-form" class="pull-right">
+                                                                            <form method="get" action="#">
+                                                                                    <input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
+                                                                            </form>
+                                                                    </div> SEARCH FORM -->
+
+                            <!-- MENU -->
+                            <div class="pull-right">
+                                <div class="navmenu btns-nav-menu right">
+                                    <ul>
+                                        <li class="first active scroll_btn">
+                                            <a href="login">Login</a>
+                                        </li>
+                                        <li class="scroll_btn btns-nav-menu-demo">
+                                            <a href="login">Request a Demo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <nav class="navmenu center">
+                                    <ul>
+                                        <li class="sub-menu">
+                                            <a href="javascript:void(0);" >Who We Serve</a>
+                                            <ul>
+                                                <li><a href="hospitals.html" >Hospitals</a></li>
+                                                <li><a href="pediatric_surgery.html" >Pediatric Surgery</a></li>
+                                                <li><a href="surgery_centers.html" >Surgery Centers</a></li>
+                                            </ul>
+                                        </li>                                        <li class="scroll_btn"><a href="about.html" >About Us</a></li>
+                                        <li class="scroll_btn"><a href="#projects" >Resources</a></li>
+                                        <li class="scroll_btn"><a href="contact.html" >Contact</a></li>                                               
+                                    </ul>
+                                </nav>
+                            </div><!-- //MENU -->
+                        </div><!-- //MENU BLOCK -->
+                    </div><!-- //CONTAINER -->
+                </header><!-- //HEADER -->
+
+
+                <!-- HOME -->
+                <section id="home" class="padbot0">
+
+                    <!-- TOP SLIDER -->
+                    <div class="flexslider top_slider top_slider_about">
+                        <ul class="slides">
+                            <li class="slide1">
+                                <div class="flex_caption1">
+                                    <h1 class="text-agin-center">
+                                        <p class="title2 captionDelay4 FromTop">About Us</p>
+                                    </h1>
+                                </div>
+                                <!--						<a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
+                            <li class="slide2">
+                                <div class="flex_caption1">
+                                    <h1 class="text-agin-center">
+                                        <p class="title2 captionDelay4 FromTop">About Us</p>
+                                    </h1>
+                                </div>
+                                <!--                                <a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
+                            </li>
+                            <li class="slide3">
+                                <div class="flex_caption1">
+                                    <h1 class="text-agin-center">
+                                        <p class="title2 captionDelay4 FromTop">About Us</p>
+                                    </h1>
+                                </div>
+                                <!--                                <a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
+
+                                <!-- VIDEO BACKGROUND -->
+                                <a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
+                                <!-- //VIDEO BACKGROUND -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!--                    <div id="carousel">
+                                            <ul class="slides">
+                                                <li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+                                                <li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
+                                                <li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+                                            </ul>
+                                        </div> -->
+                    <!-- //TOP SLIDER -->
+                </section><!-- //HOME -->
+                <!--WHO WE ARE-->
+                <section class="spacer"></section>
+                <section id="who-we-are" class="darkbox">
+                    <div class="container">
+                        <h1>Who We Are</h1>
+                        <h3 class="color_white">SafeStart Medical is the result of a career-long passion for patient safety. Despite health care information technology and the WHO Universal Protocol checklists, Never Events continue to occur at an alarming rate. We need to address medical system errors that cause great patient harm.</h3>
+                        <h3 class="color_yellow"><i>SafeStart is not just a checklist - it's a safety solution.</i></h3>
+                        <h3 class="color_white">SWe drive the safety process from the front office through the operating room, engaging patients and staff along the way. Our team of surgeons, patients, and healthcare experts put patient safety first.</h3>
+                        <h3 class="color_white"><i>Always</i></h3>
+                    </div>
+                </section>
+                <!--//WHO WE ARE-->
+                <!-- Hospitals -->
+                <section id="team-members">
+                    <div class="container">
+                        <h1 class="team-title">Team</h1>
+                        <div class="row">
+                            <div class="col-md-12 about-us-item">
+                                <div class="row">
+                                    <div class="col-md-3 text-align-right">
+                                        <div class="member-title">
+                                            <h4>
+                                                <b>
+                                                    Richard Vazquez
+                                                </b>
+                                            </h4>
+                                            <h3>MD, FACS</h3>
+                                        </div>
+                                        <div class="member-image">
+                                            <img src="images/team/member1.jpg" />
+                                            <h3>CEO/CMO</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 text-align-left team-member-description">
+                                        <p>Assistant Clinical Professor of Surgery Emeritus at the Feinberg School of Medicine of Northwestern University, is a general surgeon, and serial entrepreneur. Dr. Vazquez practiced general surgery at Northwestern Memorial Hospital in Chicago, Illinois for 38 years. Dr. Vazquez is the creator of the SafeStart surgical safety and efficiency and software mobile application suite and is the CMO/CEO/founder of SafeStart Medical, Inc.</p>
+                                        <p>Dr. Vazquez frequently lectures on surgical safety and holds certifications by the ARDMS (RVT, RPVI) for vascular ultrasound. He is a member at MATTER Chicago HIT incubator. He acted as the Director of medical affairs at Soft Tissue Sciences/PSD (PolyPro® Hydrocoat Hernia Mesh).</p>
+                                        <p>Dr. Vazquez sits on the advisory boards of several HIT startups including TapCloud, LLC, Mondopoint, LLC. He is currently the Director of Innovation and Entrepreneurship, Medical Informatics at Northwestern University Feinberg School of Medicine.</p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 about-us-item">
+                                <div class="row">
+                                    <div class="col-md-3 text-align-right">
+                                        <div class="member-title">
+                                            <h4>
+                                                <b>
+                                                    Jim Anfield
+                                                </b>
+                                            </h4>
+                                            <h3>BS, MS, MBA</h3>
+                                        </div>
+                                        <div class="member-image">
+                                            <img src="images/team/member2.jpg" />
+                                            <h3>CTO</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 text-align-left team-member-description">
+                                        <p>Senior executive experienced in information technology, strategic planning, and finance, program management with specific market expertise across several different industries including health care and manufacturing. Proven ability to strategize, propose and manage new business opportunities. Consistently successful in analyzing emerging market trends in order to capitalize on these opportunities. Critical thinker and innovative problem solver able to bridge effectively between business and technology worlds. Results focused and proven effective leader able to motivate diverse teams across both internal and external organizations. Published author and conference speaker.</p>
+                                        <p>Fluent and experienced in outsourcing and insourcing, IT strategy, consulting, financial modeling, program management, business case development, budgeting and capital analysis, benchmarking, management consulting, performance analysis, process improvement, strategic planning, optimization, governance, project management, contract negotiation, vendor management, and IT transformation, and mobile.</p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 about-us-item">
+                                <div class="row">
+                                    <div class="col-md-3 text-align-right">
+                                        <div class="member-title">
+                                            <h4>
+                                                <b>
+                                                    SPENCER L. BYRUM
+                                                </b>
+                                            </h4>
+                                            <!--                                            <h3>MD, FACS</h3>-->
+                                        </div>
+                                        <div class="member-image">
+                                            <img src="images/team/member3.jpg" />
+                                            <h3>PARTNER</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 text-align-left team-member-description">
+                                        <p>Spencer L. Byrum is a founding member and the Chief Executive Officer of HRS Consulting, Inc., a premier human performance improvement company that was specifically created and designed to enhance individual and team decision making in high-risk industries. Mr. Byrum’s specialty is taking lessons learned in aviation and other dangerous occupations and developing innovative process improvements and training for professions in which people need to make critical decisions in a stressful, demanding environment.</p> 
+                                        <p>Since becoming integrally involved in healthcare almost 20 years ago, Mr. Byrum has worked with over 600 healthcare facilities ranging from major tertiary care centers to Ambulatory Surgery Centers to Critical Access Hospitals. He has developed tools for the quantitative and qualitative assessment of the processes associated with the HAIs, SSIs, H&amp;Ps, Informed Consent, Surgical Time Out, Surgical Site Marking, Surgical Counts, Medication Errors, and other processes that have been implemented by some of the largest healthcare institutions and companies in the country. Mr. Byrum has deep experience in assessing over 1,000,000 “near miss and sentinel events” and is an expert in evaluation of the causal factors and remediation of their impact. Finally, Mr. Byrum’s programs have been recognized by major insurers to reduce losses, leading to medical malpractice premium reductions for physicians and facility premium reductions for individual hospitals and related healthcare entities. Mr. Byrum is also the author of High Reliability for a Highly Unreliable World released in January 2018.</p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 about-us-item about-us-item-last">
+                                <div class="row">
+                                    <div class="col-md-3 text-align-right">
+                                        <div class="member-title">
+                                            <h4>
+                                                <b>
+                                                    LEE FlOWERS
+                                                </b>
+                                            </h4>
+                                            <!--                                            <h3>MD, FACS</h3>-->
+                                        </div>
+                                        <div class="member-image">
+                                            <img src="images/team/member4.jpg" />
+                                            <h3>PARTNER</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 text-align-left team-member-description">
+                                        <p>Lee D. Flowers is a founding Member and President of HRS Consulting, Inc. A graduate of the University of Kentucky, with a BS in biology, he is a senior corporate executive with extensive experience leading product development and operations, major performance improvement initiatives and operational turnarounds in complex global businesses.</p> 
+                                        <p>Throughout his career, Mr. Flowers has led the planning and execution of effective “top to bottom” change in highly regulated, complex organizations with entrenched cultures and critical day to day operations. In addition to his extensive industrial background, he has conducted numerous engagements on safety and performance improvements in large and small hospitals, outpatient clinics, ambulatory surgery centers and rehabilitation centers focusing on perioperative, critical care, emergency and med-surg services. He has served as a consultant on expert committees of healthcare organizations for applying proven high reliability organization techniques to enhance communications, teamwork and training to achieve safety and performance improvements that drive reductions in adverse events, claims and improvements in productivity.</p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //Hospitals -->
+                <!-- Advisory -->
+                <section id="advisory">
+                    <div class="container">
+                        <h1 class="advisory-title">Advisory board</h1>
+
+                        <div class="projects-wrapper" data-appear-top-offset="-200" data-animated="fadeInUp">
+                            <!-- PROJECTS SLIDER -->
+                            <div class="owl-demo owl-carousel advisory-slider projects_slider">
+                                <!-- work7 -->
+                                <div class="item advisory-item" data-advisoryno="7">
+                                    <div class="work_item">
+                                        <div class="client_img">
+                                            <img src="images/works/7.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div><!-- //work7 -->
+
+                                <!-- work6 -->
+                                <div class="item advisory-item" data-advisoryno="6">
+                                    <div class="work_item">
+                                        <div class="client_img">
+                                            <img src="images/works/6.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div><!-- //work6 -->
+
+                                <!-- work4 -->
+                                <div class="item advisory-item" data-advisoryno="4">
+                                    <div class="work_item">
+                                        <div class="client_img">
+                                            <img src="images/works/4.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div><!-- //work4 -->
+
+                                <!-- work3 -->
+                                <div class="item advisory-item" data-advisoryno="3">
+                                    <div class="work_item">
+                                        <div class="client_img">
+                                            <img src="images/works/3.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div><!-- //work3 -->
+                                
+                                <!-- work1 -->
+                                <div class="item advisory-item" data-advisoryno="1">
+                                    <div class="work_item">
+                                        <div class="client_img">
+                                            <img src="images/works/1.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div><!-- //work1 -->
+
+                                <!-- work2 -->
+                                <div class="item advisory-item" data-advisoryno="2">
+                                    <div class="work_item">
+                                        <div class="client_img">
+                                            <img src="images/works/2.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div><!-- //work2 -->
+
+                                <!-- work5 -->
+                                <div class="item advisory-item"  data-advisoryno="5">
+                                    <div class="work_item">
+                                        <div class="client_img">
+                                            <img src="images/works/5.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div><!-- //work5 -->
+                            </div><!-- //PROJECTS SLIDER -->
+                        </div>
+                        <div class="row hidden-advisory" id="advisory-1">
+                            <div class="col-md-3 advisory-intro">
+                                <p class="advisory-name">George R. Cybulski</p>
+                                <p>MD, MBA</p>
+                            </div>
+                            <div class="col-md-9 advisory-description">
+                                <p>Dr. Cybulski is an Associate Professor of Neurological Surgery at the Feinberg School of Medicine of Northwestern University. Dr. Cybulski is also the Associate Director of the Neurological Surgery Residency Training Program at the McGaw Medical Center for Northwestern University and the Associate Director of Operations (Operating Room) for the Department of Neurological Surgery. As a practicing Neurosurgeon Dr. Cybulski has identified and participated in process improvement projects in the operating room at Northwestern Memorial Hospital. Dr. Cybulski completed his MBA in Health Care Management at Loyola University in 2010 along with the NMH Process Improvement Course (DMAIC). Dr. Cybulski advises companies on the value proposition for health care delivery and has lectured and written on the effect of health care reform on specialty services.</p> 
+                            </div>
+                        </div>
+                        <div class="row hidden-advisory" id="advisory-2">
+                            <div class="col-md-3 advisory-intro">
+                                <p class="advisory-name">Randal Ostroff</p>
+                                <p>MD</p>
+                            </div>
+                            <div class="col-md-9 advisory-description">
+                                <p>Dr. Randall Ostroff, MD a board certified anesthesiologist who spent 20 of his 25 clinical years of anesthesia practice as Chairman & Medical Director, Department of Anesthesiology at MacNeal Hospital in Berwyn, IL. Dr. Ostroff received his MD at The Chicago Medical School and completed his residency in Anesthesiology at Michael Reese Hospital in Chicago. Dr. Ostroff also has considerable experience in the pharmaceutical industry. During his 8 years as a Global Medical Director for Abbott his accomplishments included 2 Presidents Awards. He has served as a consultant to several pharmaceutical companies and currently works with Paion AG, a German pharmaceutical company, on the development of an IV formulation for conscious sedation in that is in phase 3 trials."</p> 
+                            </div>
+                        </div>
+                        <div class="row hidden-advisory" id="advisory-3">
+                            <div class="col-md-3 advisory-intro">
+                                <p class="advisory-name">Douglas E. Ott</p>
+                                <p>MD, MBA</p>
+                            </div>
+                            <div class="col-md-9 advisory-description">
+                                <p>Douglas E. Ott, MD, MBA is a physician, scientist, and businessman. Dr. Ott received his MD from University of Louisville and his MBA from Mercer University. He is Adjunct Professor Biomedical Engineering and Adjunct Professor of Business and Economics at Mercer University. Dr. Ott also is the chair of the Clinical Advisory Board for The American Institute of Minimally Invasive Surgery, and an advisor for Stealth Learning. He has received multiple awards for his exemplary work. Dr. Ott was the recipient of the 1992 ASLMS Basic Science Research Award. In 1999 and 2004 he received the Kott Award for Best New Instrumentation, the 2001 Kurt Semm Award from AAGL. In 2010 he was the recipient of the SLS Excel award, as well as numerous international awards for prize papers and research. Dr. Ott founded 3 medical companies; LEXION Medical, Hemerus Medical and COAG. He serves on the board of Directors of LEXION and COAG, and currently holds 38 patents.</p> 
+                            </div>
+                        </div>
+                        <div class="row hidden-advisory" id="advisory-4">
+                            <div class="col-md-3 advisory-intro">
+                                <p class="advisory-name">David Harris</p>
+                                <p></p> 
+                            </div>
+                            <div class="col-md-9 advisory-description">
+                                <p>David Harris brings over 30 years of experience developing customer-driven products. His expertise is in management of multi-discipline teams to minimize development costs and time to market. His work in healthcare spans patient transport, material management, logistics, and video integration systems for industry leaders such as Midmark, Hill-Rom, Herman Miller, ALM Surgical Equipment, Inc., Global Device Management, and Skytron.</p>
+                                <p>He also headed development for a number of seminal healthcare technology projects, including the Midmark Pediatric Crib, 405 Patient Transport System, medLYNK™ computerized pharmaceutical mobile cart, ALM C-Max operating room tables, and Skytron Linx 300 Video Integration. A leader in   collaborative process, in 1993 he created the Megateam© fast track, a market-driven product development methodology for cross discipline teams recognized by the Design Management Institute.</p>
+                            </div>
+                        </div>
+                        <div class="row hidden-advisory" id="advisory-5">
+                            <div class="col-md-3 advisory-intro">
+                                <p class="advisory-name">Robert M. Vogelzang</p>
+                                <p>MD</p>
+                            </div>
+                            <div class="col-md-9 advisory-description">
+                                <p>Robert M. Vogelzang, MD is The Albert A Nemcek Professor of Interventional Radiology at Northwestern University Feinberg School of Medicine, and served as Chief of Vascular and Interventional Radiology, one of the largest IR sections in the United States. Dr Vogelzang has been a principal investigator or a coinvestigator on numerous clinical trials, has participated in over 400 lectures, symposia, and conferences, and has published more than 180 peer-reviewed articles, abstracts, and book chapters. Dr Vogelzang served as President of the Society of Interventional Radiology (SIR) and has served on numerous committees of the SIR and the American College of Radiology. Dr Vogelzang received his medical degree from the Chicago Medical School, completed a residency in diagnostic radiology and a fellowship in interventional radiology and cross sectional imaging at Northwestern University Medical School. He is board certified in Vascular and Interventional Radiology.</p> 
+                            </div>
+                        </div>
+                        <div class="row hidden-advisory" id="advisory-6">
+                            <div class="col-md-3 advisory-intro">
+                                <p class="advisory-name">David Bisterfeldt</p>
+                                <p>DDS</p>
+                            </div>
+                            <div class="col-md-9 advisory-description">
+                                <p>Dr. Bisterfeldt is a general dentist at the Northwestern Dental Center located within Northwestern Memorial Hospital in Chicago, IL. He attained his BS in molecular biology from Benedictine University in 2006 and his DDS from the University of Illinois at Chicago, College of Dentistry in 2010. Dr. Bisterfeldt has a keen interest in the use of technology in medical and dental applications and has been an advisor for SafeStart Medical since 2017</p> 
+                            </div>
+                        </div>
+                        <div class="row" id="advisory-7">
+                            <div class="col-md-3 advisory-intro">
+                                <p class="advisory-name">Bill Culver</p>
+                                <p>MJ, BSN, RN, CNOR, ONC, CRNFA</p>
+                            </div>
+                            <div class="col-md-9 advisory-description">
+                                <p>Bill Culver is a Registered Nurse First Assistant practicing independently in the Chicago area. Bill earned his Bachelor of Science degree in Nursing from DePaul University in Chicago, Illinois. He completed Registered Nurse First Assistant (RNFA) studies at the University of California at Los Angeles (UCLA) and his clinical RNFA internship at Illinois Masonic Medical Center in Chicago. Bill is proud to hold Board Certifications in two nursing specialties: Certified Operating Room Nurse (CNOR) and Certified Registered Nurse First Assistant (CRNFA).</p>
+                                <p>Bill has more than 27 years of Operating Room Nursing experience. During his perioperative career, he has held positions as a staff nurse, charge nurse, team leader, and RNFA (specializing in Orthopaedics, Trauma, Plastic and Reconstructive surgery, Urology, and Gynecologic surgery). He has clinical expertise in the care of both Adult and Pediatric patients, including extensive experience with da Vinci robotic surgery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Advisory -->
+                <section id="our-partners">
+                    <div class="container">
+                        <h1 class="our-partners-title">Our Partners</h1>
+                        <div class="row partners-row">
+                            <div class="col-md-2 col-md-offset-1">
+                                <img src="images/partners/partners1.jpg">
+                            </div>
+                            <div class="col-md-2">
+                                <img style="max-width: 200px" src="images/partners/partners2.jpg">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="images/partners/partners3.png">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="images/partners/partners4.jpg">
+                            </div>
+                            <div class="col-md-2">
+                                <img src="images/partners/partners5.jpg">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row partners-row">
+                            <div class="col-md-4  col-md-offset-4">
+                                <img src="images/partners/partners6.jpg">
+                                <p class="color_black">SafeStart - a MATTER company</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //Our Partners -->
+                <!-- COPYRIGHT -->
+                <section class="darkbox copyright-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>&COPY; 2018 SAFESTART MEDICAL, INC. &nbsp;&nbsp;&nbsp; <a class="color_light_black" href="privacy_policy.html">Privacy Policy</a> &nbsp;&nbsp;&nbsp; <a class="color_light_black" href="terms_of_use.html">Terms of use</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //COPYRIGHT -->
+            </div><!-- //PAGE -->
+
+            <!-- CONTACTS -->
+            <section id="contacts">
+            </section><!-- //CONTACTS -->
+
+            <!-- FOOTER -->
+            <footer>
+
+                <!-- CONTAINER -->
+                <div class="container">
+
+                    <!-- ROW -->
+                    <div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 padbot30">
+                            <h4 class="safestart-footertext">SAFESTART</h4>
+                            <p>211 E. Ontario St. Suit 1195 Chicago, IL 60611</p>
+                        </div>
+
+                        <div class="col-lg-9 col-md-9 col-sm-9 padbot30 foot_about_block">
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <h4>WHO WE SERVE</h4>
+                                <p><a href="hospitals.html">Hospitals</a></p>
+                                <p><a href="pediatric_surgery.html" >Pediatric Surgery</a></p>
+                                <p><a href="surgery_centers.html">Surgery Centers</a></p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <h4>RESOURCES</h4>
+                                <p><a href="#">News</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <h4>COMPANY</h4>
+                                <p><a href="about.html">About Us</a></p>
+                                <p><a href="contact.html">Contact</a></p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                <h4>FOLLOW US</h4>
+                                <p><a href="https://twitter.com/safestartmed">Twitter</a></p>
+                                <p><a href="https://web.facebook.com/SafeStart-Medical-769286666495337/">Facebook</a></p>
+                                <p><a href="https://www.linkedin.com/company/10692304/">LinkedIn</a></p>   
+                                <p style="margin-top: 10px;"><a href="https://itunes.apple.com/us/app/safestart-2/id1216818735?mt=8"><img src="images/android-white.png"></a></p>
+                                <p style="margin-top: 10px;"><a href="https://play.google.com/store/apps/details?id=com.safestartmedical.safestart2"><img src="images/apple-white.png"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //CONTAINER -->
+            </footer><!-- //FOOTER -->
+
+
+            <!-- MAP -->
+            <div id="map">
+                <a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
+                <iframe src="http://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
+            </div><!-- //MAP -->
+
+        </div>
+    </body>
+</html>
