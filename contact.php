@@ -9,24 +9,24 @@ if (isset($_GET) && count($_GET) > 0) {
 <title>HTML email</title>
 </head>
 <body>
-<p>This email contains HTML Tags!</p>
+<p>Here is Web enquiry Details</p>
 <table>
 <tr>
-<th>Firstname</th>
-<td>" . $_GET['first_name'] . "</ts>
+<td><b>Firstname</b></td>
+<td>" . $_GET['first_name'] . "</td>
 </tr>
 <tr>
-<th>Lastname</th>
-<td>" . $_GET['last_name'] . "</ts>
+<td><b>Lastname</b></td>
+<td>" . $_GET['last_name'] . "</td>
 </tr>
 <tr>
-<th>Organization</th>
-<td>" . $_GET['organization'] . "</ts>
+<td><b>Organization</b></td>
+<td>" . $_GET['organization'] . "</td>
 </tr>
-<th>email</th>
-<td>" . $_GET['email'] . "</ts>
+<td><b>email</b></td>
+<td>" . $_GET['email'] . "</td>
 </tr>
-</table>" . $_GET['message'] . "
+</table><p><b>Message:</b><p>" . $_GET['message'] . "</p>
 </body>
 </html>
 ";
