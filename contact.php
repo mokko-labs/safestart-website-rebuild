@@ -1,3 +1,47 @@
+<?php
+if (isset($_GET) && count($_GET) > 0) {
+    $to = "contact@safestartmedical.com";
+    $subject = "Web Inquiry From Safestart";
+
+    $message = "
+<html>
+<head>
+<title>HTML email</title>
+</head>
+<body>
+<p>This email contains HTML Tags!</p>
+<table>
+<tr>
+<th>Firstname</th>
+<td>" . $_GET['first_name'] . "</ts>
+</tr>
+<tr>
+<th>Lastname</th>
+<td>" . $_GET['last_name'] . "</ts>
+</tr>
+<tr>
+<th>Organization</th>
+<td>" . $_GET['organization'] . "</ts>
+</tr>
+<th>email</th>
+<td>" . $_GET['email'] . "</ts>
+</tr>
+</table>" . $_GET['message'] . "
+</body>
+</html>
+";
+
+// Always set content-type when sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+    $headers .= 'From: <' . $_GET['email'] . '>' . "\r\n";
+    $headers .= 'Cc: myboss@example.com' . "\r\n";
+
+    mail($to, $subject, $message, $headers);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -128,7 +172,7 @@
                                             <a href="#">Login</a>
                                         </li>
                                         <li class="scroll_btn btns-nav-menu-demo">
-                                            <a href="contact.php">Request a Demo</a>
+                                            <a href="contact.html">Request a Demo</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -148,7 +192,7 @@
                                                 <li><a href="videos.html" >Videos</a></li>
                                             </ul>
                                         </li> 
-                                        <li class="scroll_btn"><a href="contact.php" >Contact</a></li>                                               
+                                        <li class="scroll_btn"><a href="contact.html" >Contact</a></li>                                               
                                     </ul>
                                 </nav>
                             </div><!-- //MENU -->
@@ -161,25 +205,19 @@
                 <section id="home" class="padbot0">
 
                     <!-- TOP SLIDER -->
-                    <div class="flexslider top_slider top_slider_hospitals">
+                    <div class="flexslider top_slider top_slider_contact">
                         <ul class="slides">
                             <li class="slide1">
                                 <div class="flex_caption1">
                                     <h1 class="text-agin-center">
-                                        <p class="title1 captionDelay2 FromTop">Hospitals</p>
-                                    </h1>
-                                    <h1 class="text-agin-center">
-                                        <p class="title2 captionDelay4 FromTop">Healthcare Systems</p>
+                                        <p class="title2 captionDelay4 FromTop">Contact Us</p>
                                     </h1>
                                 </div>
                                 <!--						<a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
                             <li class="slide2">
                                 <div class="flex_caption1">
                                     <h1 class="text-agin-center">
-                                        <p class="title1 captionDelay6 FromLeft">Hospitals</p>
-                                    </h1>
-                                    <h1 class="text-agin-center">
-                                        <p class="title2 captionDelay4 FromLeft">Healthcare Systems</p>
+                                        <p class="title2 captionDelay4 FromTop">Contact Us</p>
                                     </h1>
                                 </div>
                                 <!--                                <a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
@@ -187,10 +225,7 @@
                             <li class="slide3">
                                 <div class="flex_caption1">
                                     <h1 class="text-agin-center">
-                                        <p class="title1 captionDelay1 FromBottom">Hospitals</p>
-                                    </h1>
-                                    <h1 class="text-agin-center">
-                                        <p class="title2 captionDelay2 FromBottom">Healthcare Systems</p>
+                                        <p class="title2 captionDelay4 FromTop">Contact Us</p>
                                     </h1>
                                 </div>
                                 <!--                                <a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
@@ -210,119 +245,54 @@
                                         </div> -->
                     <!-- //TOP SLIDER -->
                 </section><!-- //HOME -->
-                <!-- Hospitals -->
-                <section id="hospitals">
+
+                <!-- Contact Form -->
+                <section id="team-members">
                     <div class="container">
-                        <h3 class="color_green">SafeStart eliminates Never Events, enhances patient engagement and satisfaction as well as increase operating room throughput and utilization.</h3>
+                        <h1 class="team-title">Contact US</h1>
+                        <br>
+                        <br>
                         <div class="row">
-                            <div class="col-md-12 hospitals-item">
-                                <div class="row">
-                                    <div class="col-md-3 text-align-right hospitals-left-column">
-                                        <h4><b>Eliminate Never Events</b></h4>
+                            <div class="col-md-12">
+                                <form id="contact-form-face" class="clearfix" action="#">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="first_name" placeholder="First Name*" required="required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="last_name" value="" placeholder="Last Name*" required="required">
+                                        </div>
                                     </div>
-                                    <div class="col-md-9 text-align-left">
-                                        <h3>SafeStart is designed to eliminate Never Events through accurate and vetted information to eliminate wrong patient, wrong procedure, and wrong site operations.</h3> 
-                                        <ul class="hosplital-description-list">
-                                            <li><span>•</span>	Reduction of patient payouts for Never Events</li>
-                                            <li><span>•</span>	Reduction in internal investigation time for Never Events</li>
-                                            <li><span>•</span>	Reduction in malpractice premiums due to Never Events</li>
-                                            <li><span>•</span>	Patient participation in liability sharing by signing off on surgical checklists</li>
-                                        </ul>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="organization" placeholder="Organization">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="email" placeholder="Email Address*" >
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 hospitals-item">
-                                <div class="row">
-                                    <div class="col-md-3 text-align-right hospitals-left-column">
-                                        <h4><b>Operating Room Throughput</b></h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="phone" placeholder="Phone Number">
+                                        </div>
                                     </div>
-                                    <div class="col-md-9 text-align-left">
-                                        <h3>SafeStart provides enhanced patient safety data and information that prevents delays and cancellations in the Operating Room allowing better Operating Room schedule continuity, throughput, and efficiency.</h3> 
-                                        <ul class="hosplital-description-list">
-                                            <li><span>•</span>	Elimination of delays</li>
-                                            <li><span>•</span>	Elimination of cancellations</li>
-                                            <li><span>•</span>	Increased capacity of the Operating Rooms</li>
-                                            <li><span>•</span>	Improvement of Operating Room schedule continuity</li>
-                                            <li><span>•</span>	Reduction in overtime expense due to reduction of Operating Room delays</li>
-                                        </ul>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <textarea required="required" name="message" placeholder="How may we help you?"></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 hospitals-item">
-                                <div class="row">
-                                    <div class="col-md-3 text-align-right hospitals-left-column">
-                                        <h4><b>Staff Satisfaction</b></h4>
+                                    <div class="row">
+                                        <div class="col-md-12 text-align-left">
+                                            <input class="contact_btn" type="submit" value="Submit">
+                                        </div>
                                     </div>
-                                    <div class="col-md-9 text-align-left">
-                                        <h3>SafeStart eliminates delays in the Operating Room thus reducing the amount of wasted waiting time for surgeons and nurses in the Operating Room. Also, reducing the amount of Never Events will im¬prove staff morale.</h3> 
-                                        <ul class="hosplital-description-list">
-                                            <li><span>•</span>	Improved staff satisfaction scores</li>
-                                            <li><span>•</span>	Help reduce staff turnover reducing recruiting expense</li>
-                                            <li><span>•</span>	Help recruit clinicians through the enhanced safety leadership position</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 hospitals-item">
-                                <div class="row">
-                                    <div class="col-md-3 text-align-right hospitals-left-column">
-                                        <h4><b>Patient Engagement</b></h4>
-                                    </div>
-                                    <div class="col-md-9 text-align-left">
-                                        <h3>SafeStart includes the patients and their families in the safety process through outreach to allow the patients to review their safety information and become part of the safety process.</h3> 
-                                        <ul class="hosplital-description-list">
-                                            <li><span>•</span>	Include surgery patients and their families in the hospital safety process</li>
-                                            <li><span>•</span>	Enhance the hospital brand of safety</li>
-                                            <li><span>•</span>	Increase patient satisfaction scores</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 hospitals-item">
-                                <div class="row">
-                                    <div class="col-md-3 text-align-right hospitals-left-column">
-                                        <h4><b>Meaningful Use</b></h4>
-                                    </div>
-                                    <div class="col-md-9 text-align-left">
-                                        <h3>SafeStart can drive EMR patient portal usage by delivering critical patient safety information that patients will active¬ly seek helping providers achieve patient portal meaning¬ful use metrics.</h3> 
-                                        <ul class="hosplital-description-list">
-                                            <li><span>•</span>	Leverage hospital investment in multi-million dollar EMR investments</li>
-                                            <li><span>•</span>	Drive patient portal registrations</li>
-                                            <li><span>•</span>	Drive ongoing patient portal usage</li>
-                                            <li><span>•</span>	Help drive achievement of Meaningful Use for patient portal usage</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 hospitals-item last-hospitals-item">
-                                <div class="row">
-                                    <div class="col-md-3 text-align-right hospitals-left-column">
-                                        <h4><b>Culture of Safety</b></h4>
-                                    </div>
-                                    <div class="col-md-9 text-align-left">
-                                        <h3>SafeStart with its introduction across the provider workflow of the office, the patient experience, and the OR, will create a top-of-mind focus on safety enhancing a hospital's brand as safety conscious.</h3> 
-                                        <ul class="hosplital-description-list">
-                                            <li><span>•</span>	Embed and strengthen a focus on safety by clinical and office personnel</li>
-                                            <li><span>•</span>	Extend Culture of Safety to external hospital communications</li>
-                                            <li><span>•</span>	Leverage Culture of Safety to external marketing and branding</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </section>
-                <!-- //Hospitals -->
+                <!-- //Contact Form -->
                 <!-- COPYRIGHT -->
                 <section class="darkbox copyright-section">
                     <div class="container">
@@ -366,12 +336,12 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-3">
                                 <h4>RESOURCES</h4>
-                                <p><a href="news.html">News</a></p>
+                                <p><a href="#">News</a></p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-3">
                                 <h4>COMPANY</h4>
                                 <p><a href="about.html">About Us</a></p>
-                                <p><a href="contact.php">Contact</a></p>
+                                <p><a href="contact.html">Contact</a></p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-3">
                                 <h4>FOLLOW US</h4>
