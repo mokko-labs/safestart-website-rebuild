@@ -477,10 +477,10 @@ header {
     margin:0 0 80px;
 }
 .cleancode_block h1.title {
-/*    margin:0 0 17px;
-    font-weight:100;
-    line-height:80px;
-    font-size:80px;*/
+    /*    margin:0 0 17px;
+        font-weight:100;
+        line-height:80px;
+        font-size:80px;*/
     color:#fff;
 }
 /*.cleancode_block p.title b {font-weight:500;}*/
@@ -2113,8 +2113,32 @@ input[type="color"]:focus {
 .request-demo-text{
     color: #45d399;
 }
-.request-demo-img{
-    margin-top: -171px;
+@media (min-width: 992px) {
+    .request-demo-img{
+        margin-top: -171px;
+    }
+}
+@media (max-width: 500px) {
+    .testim_content > h3{
+        font-size: 15px;
+    }
+    .owl-controls{
+        padding: 0;
+    }
+    .testim_author > h3{
+        font-size: 15px;
+    }
+    .testimonials{
+        max-height: 350px;
+    }
+    #news > div {
+        padding: 15px 0 15px;
+        background: rgba(87,171,233,0.5);
+    }
+    .testim_author {
+        padding-top: 15px;
+        width: 80%;
+    }
 }
 .watch-demo{
     padding: 30px 0 10px;
