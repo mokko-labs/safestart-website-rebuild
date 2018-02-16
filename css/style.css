@@ -1662,7 +1662,7 @@ input[type="color"]:focus {
 /*-----------------------------------------------------------------------------------*/
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
-    .parallax, .cleancode_block, #team, .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-attachment:scroll !important; background-position:0 0;}
+    .parallax, .cleancode_block, #team, .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-attachment:scroll !important; background-position:100%;}
     .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-size:cover !important;}
 
 }
@@ -2186,7 +2186,7 @@ input[type="color"]:focus {
     content: '';
     position: absolute;
     left: 50%;
-    top: 90px;
+/*    top: 90px;*/
     margin-left: -4px;
     width: 0;
     height: 0;
@@ -2203,7 +2203,7 @@ input[type="color"]:focus {
 #myTab>li>a{
     border: none !important;
     border: none !important;
-    font-size: 33px;
+    font-size: 2.3vw;
     text-align: center;
     line-height: 1;
     color: #45d399;
