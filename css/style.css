@@ -343,7 +343,7 @@ header {
     font-weight:400;
     text-align:left;
     font-size:12px;
-    color:#999 !important;
+    color:#fff !important;
     background:#1c1c1c;
     border-bottom:1px solid #282828;
 }
@@ -1662,7 +1662,7 @@ input[type="color"]:focus {
 /*-----------------------------------------------------------------------------------*/
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
-    .parallax, .cleancode_block, #team, .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-attachment:scroll !important; background-position:100%;}
+    .parallax, .cleancode_block, #team, .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-attachment:scroll !important; background-position:100%}
     .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-size:cover !important;}
 
 }
@@ -2005,7 +2005,7 @@ input[type="color"]:focus {
     .cleancode_block .nav-tabs li a {width:96px; height:96px;}
 
 
-    .ipad_img_in {width:290px;}
+    //   .ipad_img_in {width:290px;}
 
 
     .our_clients .row {width:290px;}
@@ -2119,6 +2119,15 @@ input[type="color"]:focus {
     }
 }
 @media (max-width: 500px) {
+    .owl-prev{
+        text-align:left;
+    }
+    .owl-next{
+        text-align:right;
+    }
+    .owl-prev>img,.owl-next>img{
+        max-width:30px;
+    }
     .testim_content > h3{
         font-size: 15px;
     }
@@ -2186,7 +2195,7 @@ input[type="color"]:focus {
     content: '';
     position: absolute;
     left: 50%;
-/*    top: 90px;*/
+    /*    top: 90px;*/
     margin-left: -4px;
     width: 0;
     height: 0;
@@ -2340,10 +2349,10 @@ p.hospitals-description {
     padding: 0 40px 15px;
 }
 .member-image{
-    max-width: 220px;
+/*    max-width: 220px;*/
     border-top: 4px solid #45d399;
     padding-top: 30px;
-    float: right;
+/*    float: right;*/
 }
 
 
@@ -2465,4 +2474,18 @@ span.testim_qouts_start > img {
 }
 .font-size-14{
     font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .about-us-item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .hospitals-item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .hospitals-left-column{
+        text-align:left;
+    }
 }
