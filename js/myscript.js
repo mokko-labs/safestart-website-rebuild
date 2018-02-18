@@ -191,7 +191,9 @@ $(document).ready(function () {
         items: 4,
         navigationText: ["<img src='images/slider/team_left.jpg'>", "<img src='images/slider/team_right.jpg'>"],
         itemsDesktop: [1000, 4],
-        itemsDesktop: [600, 3]
+        itemsDesktopSmall: [900, 4], // betweem 900px and 601px
+        itemsTablet: [700, 3], // 2 items between 600 and 480
+        itemsMobile: [479, 2],
     });
 
 
