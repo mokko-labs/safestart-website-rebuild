@@ -1,7 +1,7 @@
 safe:             false
 port:             7998
 baseurl:          /Font-Awesome/  # Where GitHub serves the project up from
-url:              http://localhost:7998
+url:              https://localhost:7998
 
 source:           src
 destination:      _gh_pages
@@ -23,9 +23,9 @@ fontawesome:
   minor_version:  4.7
   major_version:  4
   doc_blob:       v4.7.0
-  url:            http://fontawesome.io
-  legacy_url:     http://fortawesome.github.com/Font-Awesome/
-  blog_url:       http://articles.fortawesome.com
+  url:            https://fontawesome.io
+  legacy_url:     https://fortawesome.github.com/Font-Awesome/
+  blog_url:       https://articles.fortawesome.com
   twitter:        fontawesome
   tagline:        The iconic font and CSS toolkit
   css_prefix:     fa
@@ -41,17 +41,17 @@ fontawesome:
   license:
     font:
       version:      SIL OFL 1.1
-      url:          http://scripts.sil.org/OFL
+      url:          https://scripts.sil.org/OFL
     code:
       version:      MIT License
-      url:          http://opensource.org/licenses/mit-license.html
+      url:          https://opensource.org/licenses/mit-license.html
     documentation:
       version:      CC BY 3.0
-      url:          http://creativecommons.org/licenses/by/3.0/
+      url:          https://creativecommons.org/licenses/by/3.0/
 
 bootstrap:
   version:        3.3.5
-  url:            http://getbootstrap.com
+  url:            https://getbootstrap.com
 
 jquery:
   version:        1.11.3

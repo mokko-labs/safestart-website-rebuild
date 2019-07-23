@@ -20,7 +20,7 @@ $(function() {
 
 //  // inject twitter & github counts
 //  $.ajax({
-//    url: 'http://api.twitter.com/1/users/show.json',
+//    url: 'https://api.twitter.com/1/users/show.json',
 //    data: {screen_name: 'fortaweso_me'},
 //    dataType: 'jsonp',
 //    success: function(data) {
