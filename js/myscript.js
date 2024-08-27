@@ -40,10 +40,26 @@ jQuery(document).ready(function () {
         jQuery('#advisory-5').hide();
         jQuery('#advisory-6').hide();
         jQuery('#advisory-7').hide();
+        jQuery('#advisory-8').hide();
+        jQuery('#advisory-9').hide();
+        jQuery('#advisory-10').hide();
         jQuery('#advisory-' + advisoryno).show();
     });
 });
 
+/*-----------------------------------------------------------------------------------*/
+/*	PARTNER SELECTOR
+ /*-----------------------------------------------------------------------------------*/
+jQuery(document).ready(function () {
+    jQuery(".member-image").click(function () {
+        var memberno = $(this).data('memberno');
+        jQuery('#member-1').hide();
+        jQuery('#member-2').hide();
+        jQuery('#member-3').hide();
+        jQuery('#member-4').hide();
+        jQuery('#member-' + memberno).show();
+    });
+});
 
 
 
