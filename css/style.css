@@ -2105,7 +2105,7 @@ input[type="color"]:focus {
 
 }
 .text-agin-center{
-    text-align : center;
+    text-align : right;
 }
 .logo > a > h1{
     color: #fff;
@@ -2457,7 +2457,7 @@ p.hospitals-description {
     padding-bottom: 15px;
 }
 .advisory-intro{
-    text-align: right;
+    text-align: left;
 }
 .advisory-name{
     font-weight: 700;
