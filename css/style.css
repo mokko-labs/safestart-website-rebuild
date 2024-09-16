@@ -2267,7 +2267,7 @@ input[type="color"]:focus {
 #myTab>li>a{
     border: none !important;
     border: none !important;
-    font-size: 2.3vw;
+    font-size: 2vw;
     text-align: center;
     line-height: 1;
     color: #45d399;
