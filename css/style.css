@@ -1347,6 +1347,8 @@ input[type="color"]:focus {
     height:369px;
     margin-right:30px;
     background-color:#000;
+
+
 }
 .blog_post_img img {
     width:auto;
@@ -1407,7 +1409,10 @@ input[type="color"]:focus {
 .blog_post_content {
     padding-bottom:18px;
     line-height:26px;
-    font-size:17px;
+    font-size:19px;
+    display: flex;
+    align-items: flex-start;
+    
 }
 .blog_post .read_more_btn {
     font-weight:500;
@@ -2444,6 +2449,7 @@ p.hospitals-description {
     vertical-align: central;
     text-align: center;
     min-height: 150px;
+    
 }
 #advisory{
     background: #ebebeb;
