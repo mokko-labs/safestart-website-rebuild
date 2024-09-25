@@ -2449,6 +2449,13 @@ p.hospitals-description {
     vertical-align: central;
     text-align: center;
     min-height: 150px;
+}
+
+.partners-row img{
+    max-width: 100%; /* Ensures images stay within their containers */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 100px; /* Optional: limit the height of the images */
+}
     
 }
 #advisory{
