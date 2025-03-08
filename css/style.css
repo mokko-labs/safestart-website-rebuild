@@ -1722,7 +1722,7 @@ input[type="color"]:focus {
 /*-----------------------------------------------------------------------------------*/
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
-    .parallax, .cleancode_block, #team, .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-attachment:scroll !important; background-position:100%}
+/*    .parallax, .cleancode_block, #team, .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-attachment:scroll !important; background-position:100%} */
     .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {background-size:cover !important;}
 
 }
@@ -1733,7 +1733,7 @@ input[type="color"]:focus {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .parallax, .cleancode_block, #team {background-attachment:scroll !important; background-size:100% auto !important; -webkit-background-size:100% auto !important;}
+/*    .parallax, .cleancode_block, #team {background-attachment:scroll !important; background-size:100% auto !important; -webkit-background-size:100% auto !important;}
 
 
     h2 {font-size:35px; line-height:35px;}
@@ -2065,7 +2065,7 @@ input[type="color"]:focus {
     .cleancode_block .nav-tabs li a {width:96px; height:96px;}
 
 
-    //   .ipad_img_in {width:290px;}
+    /*   .ipad_img_in {width:290px;} */
 
 
     .our_clients .row {width:290px;}
@@ -2457,12 +2457,13 @@ p.hospitals-description {
     max-height: 100px; /* Optional: limit the height of the images */
 }
     
-}
+
 #advisory{
     background: #ebebeb;
     padding: 30px 0;
     text-align: center;
 }
+
 .advisory-title{
     color: #45d399;
     border-bottom: 4px solid #737373;
