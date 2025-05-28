@@ -720,7 +720,7 @@
 
     <script>
         // Contact form handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const submitBtn = document.getElementById('submitBtn');
@@ -745,14 +745,29 @@
             // Disable submit button
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
-            
-            // Simulate form submission (replace with actual form handling)
-            setTimeout(() => {
-                alert('Thank you for your message! We will contact you within 24 hours.');
-                document.getElementById('contactForm').reset();
+
+            // Send form data to backend
+            try {
+                const response = await fetch('/api/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+                const result = await response.json();
+                if (response.ok && result.success) {
+                    alert('Thank you for your message! We will contact you within 24 hours.');
+                    document.getElementById('contactForm').reset();
+                } else {
+                    alert(result.error || 'There was an error sending your message. Please try again later.');
+                }
+            } catch (err) {
+                alert('There was an error sending your message. Please try again later.');
+            } finally {
                 submitBtn.disabled = false;
                 submitBtn.textContent = 'Send Message';
-            }, 1500);
+            }
         });
 
         // Smooth scrolling for navigation links
