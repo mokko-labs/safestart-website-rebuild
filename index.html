@@ -1,531 +1,928 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>SafeStart Medical - Advanced Healthcare Solutions for PATH Clients</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <meta charset="utf-8">
-    <title>SafeStart | Surgical Safety System</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        /* Enhanced Navbar Styles */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
 
-    <link rel="shortcut icon" href="images/favicon.ico">
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            position: relative;
+        }
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+        .nav-links a,
+        .dropdown-toggle {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c5aa0;
+            padding: 0.8rem 0.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
 
-    <!-- CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
-    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+        .nav-links a:hover,
+        .nav-links a:focus,
+        .dropdown-toggle:hover,
+        .dropdown-toggle:focus {
+            color: #667eea;
+            outline: none;
+        }
 
-    <!-- FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!--        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	-->
-    <link href="Font-Awesome-master/css/font-awesome.css" rel="stylesheet">
+        .dropdown-toggle {
+            background: none;
+        }
 
-    <!-- SCRIPTS -->
-    <!--[if IE]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+        .dropdown-content {
+            top: calc(100% + 0.5rem);
+            border-radius: 8px;
+        }
 
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
-    <script src="js/superfish.min.js" type="text/javascript"></script>
-    <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.js" type="text/javascript"></script>
-    <script src="js/animate.js" type="text/javascript"></script>
-    <script src="js/jquery.BlackAndWhite.js"></script>
-    <script src="js/myscript.js" type="text/javascript"></script>
-    <script>
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
 
-            //PrettyPhoto
-            jQuery(document).ready(function () {
-                $("a[rel^='prettyPhoto']").prettyPhoto();
-            });
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
 
-            //BlackAndWhite
-            $(window).load(function () {
-                $('.client_img').BlackAndWhite({
-                    hoverEffect: true, // default true
-                    // set the path to BnWWorker.js for a superfast implementation
-                    webworkerPath: false,
-                    // for the images with a fluid width and height
-                    responsive: true,
-                    // to invert the hover effect
-                    invertHoverEffect: false,
-                    // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
-                    intensity: 1,
-                    speed: {//this property could also be just speed: value for both fadeIn and fadeOut
-                        fadeIn: 300, // 200ms for fadeIn animations
-                        fadeOut: 300 // 800ms for fadeOut animations
-                    },
-                    onImageReady: function (img) {
-                        // this callback gets executed anytime an image is converted
-                    }
-                });
-            });
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    </script>
-    <!-- Google Analytics -->
-    <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            height: 50px;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
 
-            ga('create', 'UA-112760395-1', 'auto');
-            ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
 
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5aa0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
 
-    <script type='text/javascript' src='unitegallery/js/ug-common-libraries.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-functions.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-thumbsgeneral.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-thumbsstrip.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-touchthumbs.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-panelsbase.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-strippanel.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-gridpanel.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-thumbsgrid.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-tiles.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-tiledesign.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-avia.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-slider.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-sliderassets.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-touchslider.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-zoomslider.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-video.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-gallery.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-lightbox.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-carousel.js'></script>
-    <script type='text/javascript' src='unitegallery/js/ug-api.js'></script>
+        .logo::before {
+            content: "⚕️";
+            font-size: 1.5rem;
+        }
 
-    <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            position: relative;
+        }
 
-    <script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script>
-    <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
 
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6024160.js"></script>
-    <!-- End of HubSpot Embed Code -->
+        .nav-links a:hover {
+            color: #2c5aa0;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 300px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            z-index: 1001;
+            top: 100%;
+            left: 0;
+            padding: 1rem 0;
+            margin-top: 0.5rem;
+            border: 1px solid rgba(44, 90, 160, 0.1);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .dropdown-content a:hover {
+            background: #f8faff;
+            color: #2c5aa0;
+            border-left-color: #2c5aa0;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            /* smaller padding */
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.95rem;
+            /* slightly smaller text */
+        }
+
+        .cta-button:hover {
+            filter: brightness(1.1);
+            /* slightly brighten on hover */
+            transform: scale(1.05);
+            /* gently scale up */
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>') no-repeat center/cover;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(1deg);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e6ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .btn-primary {
+            background: rgba(255, 255, 255, 0.9);
+            color: #2c5aa0;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-primary:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: white;
+            position: relative;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c5aa0;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #f8faff 0%, #e6f0ff 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(44, 90, 160, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(44, 90, 160, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #2c5aa0 0%, #1e3a5f 100%);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #a8d0ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .cta-content {
+            background: linear-gradient(135deg, #f8faff 0%, #e6f0ff 100%);
+            padding: 4rem 2rem;
+            border-radius: 30px;
+            border: 1px solid rgba(44, 90, 160, 0.1);
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 2rem auto;
+            border: 1px solid rgba(44, 90, 160, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c5aa0;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e6f0ff;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8faff;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .bot-protection {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .bot-protection label {
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
+            }
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            line-height: 1.8;
+        }
+
+        .footer-section a:hover {
+            color: #667eea;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .feature-card {
+                padding: 2rem;
+            }
+        }
+
+        /* Scroll animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
-    <body>
 
-        <!-- PRELOADER -->
-        <img id="preloader" src="images/preloader.gif" alt="" />
-        <!-- //PRELOADER -->
-        <div class="preloader_hide">
-
-            <!-- PAGE -->
-            <div id="page">
-
-                <!-- HEADER -->
-                <header>
-
-                    <!-- MENU BLOCK -->
-                    <div class="menu_block">
-
-                        <!-- CONTAINER -->
-                        <div class="container clearfix">
-
-                            <!-- LOGO -->
-                            <div class="logo pull-left flex flex-row items-center justify-center">
-                                <a href="index.html" >
-                                    <i class="fa fa-check-circle-o"></i>
-                                    <h1 tile="Safetstart Medical Checklist Application">SAFESTART<sup>®</sup></h1>
-                                </a>
-                            </div><!-- //LOGO -->
-
-                            <!-- SEARCH FORM -->
-                            <!--					<div id="search-form" class="pull-right">
-                                                                            <form method="get" action="#">
-                                                                                    <input type="text" name="Search" value="Search" onFocus="if (this.value == 'Search') this.value = '';" onBlur="if (this.value == '') this.value = 'Search';" />
-                                                                            </form>
-                                                                    </div> SEARCH FORM -->
-
-                            <!-- MENU -->
-                            <div class="pull-right">
-                                <div class="navmenu btns-nav-menu right">
-                                    <ul>
-                                        <li class="first active scroll_btn">
-                                            <a href="#">Login</a>
-                                        </li>
-                                        <li class="scroll_btn btns-nav-menu-demo">
-                                            <a href="contact.html">Request a Demo</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <nav class="navmenu center">
-                                    <ul>
-                                        <li class="sub-menu">
-                                            <a href="javascript:void(0);" >Who We Serve</a>
-                                            <ul>
-                                                <li><a href="hospitals.html" >Hospitals</a></li>
-                                                <li><a href="pediatric_surgery.html" >Pediatric Surgery</a></li>
-                                                <li><a href="surgery_centers.html" >Surgery Centers</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="scroll_btn"><a href="about.html" >About Us</a></li>
-                                        <li class="sub-menu">
-                                            <a href="javascript:void(0);" >Resources</a>
-                                            <ul>
-                                                <li><a href="videos.html" >Videos</a></li><li><a href="news.html" >News</a></li>
-                                            </ul>
-                                        </li> 
-                                        <li class="scroll_btn"><a href="contact.html" >Contact</a></li>                                               
-                                    </ul>
-                                </nav>
-                            </div><!-- //MENU -->
-                        </div><!-- //MENU BLOCK -->
-                    </div><!-- //CONTAINER -->
-                </header><!-- //HEADER -->
-
-
-                <!-- HOME -->
-                <section id="home" class="padbot0">
-
-                    <!-- TOP SLIDER -->
-                    <div class="flexslider top_slider">
-                        <ul class="slides">
-                            <li class="slide1">
-                                <div class="flex_caption1">
-                                    <h1 class="text-agin-center">
-                                        <p class="title1 captionDelay2 FromTop">We help you prevent</p>
-                                    </h1>
-                                    <h1 class="text-agin-center">
-                                        <p class="title2 captionDelay4 FromTop">Never Events</p>
-                                    </h1>
-                                </div>
-                                <!--						<a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
-                            <li class="slide2">
-                                <div class="flex_caption1">
-                                    <h1 class="text-agin-center">
-                                        <p class="title1 captionDelay6 FromLeft">We help you prevent</p>
-                                    </h1>
-                                    <h1 class="text-agin-center">
-                                        <p class="title2 captionDelay4 FromLeft">Never Events</p>
-                                    </h1>
-                                </div>
-                                <!--                                <a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
-                            </li>
-                            <li class="slide3">
-                                <div class="flex_caption1">
-                                    <h1 class="text-agin-center">
-                                        <p class="title1 captionDelay1 FromBottom">We help you prevent</p>
-                                    </h1>
-                                    <h1 class="text-agin-center">
-                                        <p class="title2 captionDelay2 FromBottom">Never Events</p>
-                                    </h1>
-                                </div>
-                                <!--                                <a class="slide_btn FromRight" href="javascript:void(0);" >Read More</a>-->
-
-                                <!-- VIDEO BACKGROUND -->
-                                <a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}" ></a>
-                                <!-- //VIDEO BACKGROUND -->
-                            </li>
-                        </ul>
+<body>
+    <header>
+        <nav class="container nav-container">
+            <div class="logo">SafeStart Medical</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services ▼</button>
+                    <div class="dropdown-content">
+                        <a href="https://securlinx.com/products/securport-healthcare/" target="_blank">
+                            SecurPort Security and Verification Solutions
+                        </a>
                     </div>
-                    <!--                    <div id="carousel">
-                                            <ul class="slides">
-                                                <li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
-                                                <li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
-                                                <li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
-                                            </ul>
-                                        </div> -->
-                    <!-- //TOP SLIDER -->
-                </section><!-- //HOME -->
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#path">PATH Portal</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Started</a>
+            <img src="USI_Blu_wht_bckgd_rgb2.png" alt="USI Logo" style="height:40px; margin-left:1rem;">
+        </nav>
 
+    </header>
 
-                <!-- ABOUT -->
-                <section id="about">
-
-                    <!-- SERVICES -->
-                    <div class="services_block description-box darkbox padbot120" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-                        <!-- CONTAINER -->
-                        <div class="container">
-
-                            <!-- ROW -->
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-ss-12 margbot30">
-                                    <a class="services_item" href="javascript:void(0);" >
-                                        <h2 class="color_white">SafeStart Medical's solution is the key to mitigating surgical never-event errors, ensuring that wrong patient, wrong site, and wrong operation errors are a thing of the past.</h3>
-
-                                    </a>
-                                </div><!-- //ROW -->
-                            </div><!-- //CONTAINER -->
-                        </div>
-                    </div><!-- //SERVICES -->
-                    <!-- VIDEO -->
-                    <div class="services_block" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-                        <!-- CONTAINER -->
-                        <div class="container">
-
-                            <!-- ROW -->
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-ss-12">       
-                                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1011130646?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SafeStart Adult Patient surgery embed website 09-24"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                                    <!--                                <iframe class="video-iframe" allowFullScreen frameborder="0" height="564" mozallowfullscreen src="https://player.vimeo.com/video/224414725" webkitAllowFullScreen width="100%"></iframe>-->
-                                    <!--<iframe class="video-iframe" width="854" height="480" src="https://www.youtube.com/embed/eknIvXx1hQU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
-                                </div>
-                            </div><!-- //ROW -->
-                        </div><!-- //CONTAINER -->
-                    </div><!-- //VIDEO -->
-
-                    <!-- CLEAN CODE -->
-                    <div class="cleancode_block darkbox">
-
-                        <!-- CONTAINER -->
-                        <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-                            <!-- CASTOM TAB -->
-                            <div class="createdby-div">
-                                <div class="tab-pane fade in active clearfix" id="tab1">
-                                    <h1 class="color_white">Created by a surgeon with a passion for safety</h1>
-                                    <span class="yellow-seprator"></span>
-                                    <div class="col-md-8 col-sm-12 col-md-offset-2">
-                                        <h3 class="color_white">SafeStart's mobile, cloud-based, technology compliant with HIPAA organizes and displays the patient record and adds surgeon annotated site photos, key images, allergies, consent forms, and more.</h3>
-                                        <br>
-                                        <br>
-                                        <h3 class="color_white">Multiple record reviews and sign-offs by clinical staff, and the patient, allow procedures to start safely and on time.
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- //CONTAINER -->
-                    </div><!-- //CLEAN CODE -->
-
-                    <!-- MULTI PURPOSE -->
-                    <div class="purpose_block">
-
-                        <!-- CONTAINER -->
-                        <div class="container">
-
-                            <!-- ROW -->
-                            <div class="row">
-
-                                <div class="col-lg-7 col-md-7 col-sm-7  col-xs-12" data-appear-top-offset="-200" data-animated="fadeInLeft">
-                                    <img src="images/events.jpg">
-                                </div>
-
-                                <div class="col-lg-5 col-md-5 col-sm-5 col-sm-12 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
-                                    <div class="never-events-div">
-                                        <h1 class="never-events-count">5,000<sup>+</sup></h1>
-                                        <p>Never Events Happen per year in us operating rooms.</p>
-                                    </div>
-                                    <div class="never-events-office">
-                                        <h1 class="never-events-count">40<sup>%</sup></h1>
-                                        <p>Of never events originate in the office.</p>
-                                    </div>
-                                    <h3 class="availablity-text">Available on desktop and mobile</h3>
-                                </div>
-                            </div><!-- //ROW -->
-                        </div><!-- //CONTAINER -->
-                    </div><!-- //MULTI PURPOSE -->
-                </section>
-                <!-- TABS -->
-                <section id="tabs">
-
-                    <!-- CONTAINER -->
-                    <div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-                        <ul id="myTab" class="nav nav-tabs">
-                            <li class="active"><a class="i1" href="#tab1" data-toggle="tab" ><i></i><span>Eliminate Never Event Risk</span></a></li>
-                            <li><a class="i2" href="#tab2" data-toggle="tab" ><i></i><span>Increase Patient Engagement</span></a></li>
-                            <li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>Reduce Delay and Cancellations</span></a></li>
-                        </ul>
-                        <!-- CASTOM TAB -->
-                        <div id="myTabContent" class="tab-content">
-                            <div class="tab-pane fade in active clearfix" id="tab1">
-                                <div class="col-md-8 col-sm-12 col-md-offset-2">
-                                    <img src="images/thumbs/tab11.jpg" class="tab-image">
-                                    <h3>Never Events are unacceptable, avoidable, and cause great harm to patients as well as negatively impacting doctors, nurses, and their facilities.</h3>
-                                    <h3>SafeStart is designed to eliminate wrong patient, wrong procedure, and wrong site Never Events by using enhanced and vetted clinical information.</h3>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade clearfix" id="tab2">
-                                <div class="col-md-8 col-sm-12 col-md-offset-2">
-                                    <img src="images/thumbs/tab12.jpg" class="tab-image">
-                                    <h3>Engaged patients lead to improved health outcomes, better patient care, and lower costs.</h3>
-                                    <h3>SafeStart's design includes the patient and family as part of the care team that includes the facility and anesthesia service.</h3>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade clearfix" id="tab3">
-                                <div class="col-md-8 col-sm-12 col-md-offset-2">
-                                    <img src="images/thumbs/tab13.jpg" class="tab-image">
-                                    <h3>Reduce Delays, Cancellations, and No Shows that disrupt patient flow, increase operational costs, raise patient anxiety and cause revenue loss.</h3>
-                                    <h3>All stakeholders vet SafeStart's comprehensive graphically rich patient care document set multiple times before the patient arrives at the preoperative area and in the preoperative area streamlining a safe care process so procedures can start on time.</h3>                                </div>
-                            </div>
-                        </div><!-- CASTOM TAB -->
-                    </div><!-- //CONTAINER -->
-                </section><!-- //TABS -->
-                <section class="spacer">
-                </section>
-
-
-                <!-- NEWS -->
-                <section id="news">
-
-                    <div>
-                        <!-- CONTAINER -->
-                        <div class="container">
-                            <!-- TESTIMONIALS -->
-                            <div class="testimonials" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-                                <!-- TESTIMONIALS SLIDER -->
-                                <div class="owl-demo owl-carousel testim_slider">
-
-                                    <!-- TESTIMONIAL1 -->
-                                    <div class="item">
-                                        <div class="testim_content"><h3 class="color_white"><span class="testim_qouts_start"><img src="images/testimonial_start.png"></span>SafeStart has the potential to make cataract surgery planning safer as it allows the patient to participate in the confirmation of the correct patient, correct procedure and the correct eye.  The ability to visualize the selection of the proper surgical eye is particularly important.<span class="testim_qouts_end"><img src="images/testimonial_end.png"></span></h3></div>
-                                        <div class="testim_author color_white"><h3 class="color_white"><b>— William Myers,</b> <i>MD FACS FAAP FRCS, Asst. Prof. of Ophthalmology at Northwestern, Jessie Brown VA</i></h3></div>
-                                    </div><!-- TESTIMONIAL1 -->
-
-                                    <!-- TESTIMONIAL2 -->
-                                    <div class="item">
-                                        <div class="testim_content"><h3 class="color_white"><span class="testim_qouts_start"><img src="images/testimonial_start.png"></span>My plastic surgery patients love the fact that we engage them in the safety process, and they found the SafeStart app incredibly easy to use.  I really feel like with SafeStart I will never have to worry about a Never Event.<span class="testim_qouts_end"><img src="images/testimonial_end.png"></span></h3></div>
-                                        <div class="testim_author color_white"><h3 class="color_white"><b>— Clark Shierle,</b> <i>MD, PhD, FACS, Northwestern Plastics</i></h3></div>
-                                    </div><!-- TESTIMONIAL2 -->
-
-                                    <!-- TESTIMONIAL3 -->
-                                    <div class="item">
-                                        <div class="testim_content"><h3 class="color_white"><span class="testim_qouts_start"><img src="images/testimonial_start.png"></span>SafeStart has given me and my surgical team the confidence that we will be doing all we can to reduce the possibility of a Never Event. My clinical staff and I love SafeStart. By using SafeStart we all believe we are implementing the best practices in surgical safety and patient engagement. <span class="testim_qouts_end"><img src="images/testimonial_end.png"></span></h3>
-                                        </div>
-                                        <div class="testim_author color_white"><h3 class="color_white"><b>— Richard H. Pearl,</b> <i>MD FACS FAAP FRCS©Professor of Surgery and</i></h3></div>
-                                    </div>
-                                    <!-- TESTIMONIAL3 -->
-                                     <!-- TESTIMONIAL4 -->
-                                    <div class="item">
-                                        <div class="testim_content"><h3 class="color_white"><span class="testim_qouts_start"><img src="images/testimonial_start.png"></span>SafeStart has the potential to make cataract surgery planning safer as it allows the patient to participate in the confirmation of the correct patient, correct procedure and the correct eye.  The ability to visualize the selection of the proper surgical eye is particularly important. <span class="testim_qouts_end"><img src="images/testimonial_end.png"></span></h3>
-                                        </div>
-                                        <div class="testim_author color_white"><h3 class="color_white"><b>— Katie Lee,</b> <i>RN BSN CPHRM PhD, Cumberland Surgical Arts</i></h3></div>
-                                    </div>
-                                    <!-- TESTIMONIAL4 -->
-                                </div><!-- TESTIMONIALS SLIDER -->
-                            </div><!-- //TESTIMONIALS -->
-                        </div><!-- //CONTAINER -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>The SafeStart Risk Mitigation Solution Special Offer for USI.com PATH Clients</h1>
+                    <p>We offer comprehensive risk mitigation services for the prevention of surgical never events. Your
+                        risk and patient safety are our priorities.</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn-primary">Explore Services</a>
+                        <a href="#path" class="btn-secondary">PATH Portal Access</a>
                     </div>
-                </section><!-- //NEWS -->
-                <section class="spacer">
-                </section>
-                <!-- WATCH DEMO -->
-                <section class="darkbox watch-demo">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 center">
-                                <h1 class="color_white"><a href="videos.html" class="color_white color_white_onhover">Watch a <i class="yellow-text">Video</i> Today</a></h1>
-                                <p class="font-size-14">Learn how SafeStart can help you start surgery safely... and on time.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="services">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Improved Surgical Outcomes</h2>
+                <div class="features-grid">
+                    <div class="feature-card animate-on-scroll">
+                        <span class="feature-icon">📋</span>
+                        <h3>EMR Augmentation</h3>
+                        <p>SafeStart augments your EMR with comprehensive information management processes to organize
+                            and share information required to safely start surgical procedures.</p>
                     </div>
-                </section>
-                <!-- //WATCH DEMO -->
-                <!-- REQUEST DEMO -->
-                <section class="darkbox-gray">
-                    <div class="container inner-contianer">
-                        <div class="row">
-                            <div class="col-md-8 col-sm-8 col-xs-12 center">
-                                <h3 class="request-demo-btn-container"><a href="contact.html" class="request-demo-btn"><b>REQUEST A DEMO</b></a></h3>
-                                <h3 class="request-demo-text">SafeStart works with or without an EMR</h3>
-                            </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-                                <img class="request-demo-img" src="images/safestart-ipad.png" />
-                            </div>
-                        </div>
+                    <div class="feature-card animate-on-scroll">
+                        <span class="feature-icon">👥</span>
+                        <h3>Collaborative Crosscheck Tool</h3>
+                        <p>Seamlessly displays complete end-to-end preoperative information, allowing surgeons,
+                            facilities, staff, and patients to share content and control of the patient preparation
+                            process.</p>
                     </div>
-                </section>
-                <!-- //REQUEST DEMO -->
-                <!-- COPYRIGHT -->
-                <section class="darkbox copyright-section">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>&copy; 2025 SAFESTART MEDICAL, INC. &nbsp;&nbsp;&nbsp; <a class="color_light_black" href="privacy_policy.html">Privacy Policy</a> &nbsp;&nbsp;&nbsp; <a class="color_light_black" href="terms_of_use.html">Terms of use</a></p>
-                                <p>&copy; 2025 SecurStart, INC. &nbsp;&nbsp;&nbsp; <a class="color_light_black" href="privacy_policy.html">Privacy Policy</a> &nbsp;&nbsp;&nbsp; <a class="color_light_black" href="terms_of_use.html">Terms of use</a></p>
-                                <p>Produced by Innowave Development</p>
-                            </div>
-                        </div>
+                    <div class="feature-card animate-on-scroll">
+                        <span class="feature-icon">🔍</span>
+                        <h3>Gap Detection & Closure</h3>
+                        <p>Provides the digital environment to detect and close all gaps in the data set from patient
+                            intake through the preoperative area and operating room.</p>
                     </div>
-                </section>
-                <!-- //COPYRIGHT -->
-            </div><!-- //PAGE -->
-
-            <!-- CONTACTS -->
-            <section id="contacts">
-            </section><!-- //CONTACTS -->
-
-            <!-- FOOTER -->
-            <footer>
-
-                <!-- CONTAINER -->
-                <div class="container">
-
-                    <!-- ROW -->
-                    <div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
-
-                        <div class="col-lg-3 col-md-3 col-sm-3 padbot30">
-                            <h4 class="safestart-footertext">SAFESTART</h4>
-                            <p>8021 Brightwater Way, Spring Hill, Tennessee, 37174-2250</p>
-                        </div>
-
-                        <div class="col-lg-9 col-md-9 col-sm-9 padbot30 foot_about_block">
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <h4>WHO WE SERVE</h4>
-                                <p><a href="hospitals.html">Hospitals</a></p>
-                                <p><a href="pediatric_surgery.html" >Pediatric Surgery</a></p>
-                                <p><a href="surgery_centers.html">Surgery Centers</a></p>
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <h4>RESOURCES</h4>
-                                <p><a href="news.html">News</a></p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <h4>COMPANY</h4>
-                                <p><a href="about.html">About Us</a></p>
-                                <p><a href="contact.html">Contact</a></p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3">
-                                <h4>FOLLOW US</h4>
-                                <p><a href="https://twitter.com/safestartmed">Twitter</a></p>
-                                <p><a href="https://web.facebook.com/SafeStart-Medical-769286666495337/">Facebook</a></p>
-                                <p><a href="https://www.linkedin.com/company/10692304/">LinkedIn</a></p>
-                                <p style="margin-top: 10px;"><a href="https://apps.apple.com/us/app/safestart-medical/id1178744508"><img src="images/apple-white.png"></a></p>
-                                
-                            </div>
-                        </div>
+                    <div class="feature-card animate-on-scroll">
+                        <span class="feature-icon">🚫</span>
+                        <h3>Never Event Elimination</h3>
+                        <p>Through continual sharing of image-rich information, SafeStart eliminates never events,
+                            patient-caused schedule delays, cancellations, and no-shows.</p>
                     </div>
-                </div><!-- //CONTAINER -->
-            </footer><!-- //FOOTER -->
+                    <div class="feature-card animate-on-scroll">
+                        <span class="feature-icon">📊</span>
+                        <h3>Process Standardization</h3>
+                        <p>Ensures accuracy and patient safety required for precision care while relieving staff and
+                            patient anxiety through standardized compliance processes.</p>
+                    </div>
+                    <div class="feature-card animate-on-scroll">
+                        <span class="feature-icon">🛡️</span>
+                        <h3>Culture of Safety</h3>
+                        <p>SafeStart deployment serves as a keystone habit that fosters development of an improved
+                            culture of safety throughout your surgical facility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid animate-on-scroll">
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Chat Support</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!-- MAP -->
-            <div id="map">
-                <a class="map_hide" href="javascript:void(0);" ><i class="fa fa-angle-right"></i><i class="fa fa-angle-left"></i></a>
-                <iframe src="https://maps.google.com/maps?f=q&amp;give%20a%20hand=s_q&amp;hl=en&amp;geocode=&amp;q=london&amp;sll=37.0625,-95.677068&amp;sspn=42.631141,90.263672&amp;ie=UTF8&amp;hq=&amp;hnear=London,+United+Kingdom&amp;ll=51.500141,-0.126257&amp;spn=0.026448,0.039396&amp;z=14&amp;output=embed" ></iframe>
-            </div><!-- //MAP -->
+        <section class="cta-section" id="path">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Join other PATH clients who trust SafeStart Medical for their risk mitigation needs for the
+                        elimination of never events.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="#contact" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2rem;">Contact Us
+                            Today</a>
+                        <a href="https://usi.com" class="btn-secondary" target="_blank"
+                            style="color: #2c5aa0; border-color: #2c5aa0;">Visit USI.com PATH</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white; margin-bottom: 2rem;">Contact Us</h2>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">Organization *</label>
+                    <input type="text" id="organization" name="organization" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telephone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="helpMessage">How can we help you? *</label>
+                    <textarea id="helpMessage" name="helpMessage"
+                        placeholder="Please describe how SafeStart can assist with your risk mitigation needs..."
+                        required></textarea>
+                </div>
+
+                <div class="bot-protection">
+                    <label for="botCheck">To verify you're human, please answer: What is 5 + 3? *</label>
+                    <input type="number" id="botCheck" name="botCheck" required min="8" max="8">
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+            </form>
+
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>📞 Phone: 1-312-296-2019</p>
+                    <p>✉️ Email: info@safestartmedical.com</p>
+                    <p>📍 Address: 8021 Brightwater Way, Spring Hill, Tennessee 37174</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="https://usi.com" target="_blank">USI.com</a></p>
+                    <p><a href="https://safestartmedical.com" target="_blank">SafeStartMedical.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SafeStart Medical, Inc. All rights reserved. | A trusted partner of USI.com PATH program
+                </p>
+            </div>
         </div>
-        <script type="text/javascript">
+    </footer>
 
-            jQuery(document).ready(function () {
-                jQuery("#gallery").unitegallery({gallery_width: 1200});
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const botCheck = document.getElementById('botCheck').value;
+
+            // Verify bot protection
+            if (parseInt(botCheck) !== 8) {
+                alert('Please answer the verification question correctly.');
+                return;
+            }
+
+            // Collect form data
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                organization: document.getElementById('organization').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                helpMessage: document.getElementById('helpMessage').value
+            };
+
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            // Simulate form submission (replace with actual form handling)
+            setTimeout(() => {
+                alert('Thank you for your message! We will contact you within 24 hours.');
+                document.getElementById('contactForm').reset();
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }, 1500);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
+        });
 
-        </script>
-    </body>
+        // Animate elements on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('animated');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run once on load
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Counter animation for stats
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.stat-item h3');
+            counters.forEach(counter => {
+                const text = counter.textContent;
+                // Skip animation for 24/7
+                if (text.includes('/')) {
+                    return;
+                }
+                const target = parseInt(text.replace(/\D/g, ''));
+                if (target) {
+                    let current = 0;
+                    const increment = target / 50;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            counter.textContent = counter.textContent.replace(/\d+/, target);
+                            clearInterval(timer);
+                        } else {
+                            counter.textContent = counter.textContent.replace(/\d+/, Math.floor(current));
+                        }
+                    }, 30);
+                }
+            });
+        };
+
+        // Trigger counter animation when stats section is visible
+        const statsSection = document.querySelector('.stats');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+    </script>
+</body>
+
 </html>
