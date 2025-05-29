@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>SafeStart Medical - Advanced Healthcare Solutions for PATH Clients</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        /* Enhanced Navbar Styles */
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+            position: relative;
+        }
+
+        .nav-links a,
+        .dropdown-toggle {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c5aa0;
+            padding: 0.8rem 0.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a:focus,
+        .dropdown-toggle:hover,
+        .dropdown-toggle:focus {
+            color: #667eea;
+            outline: none;
+        }
+
+        .dropdown-toggle {
+            background: none;
+        }
+
+        .dropdown-content {
+            top: calc(100% + 0.5rem);
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
         }
 
         body {
@@ -30,6 +81,7 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             position: fixed;
+            height: 50px;
             width: 100%;
             top: 0;
             z-index: 1000;
@@ -117,7 +169,8 @@
         .cta-button {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 0.5rem 1rem;
+            /* smaller padding */
             border: none;
             border-radius: 50px;
             font-weight: 600;
@@ -125,11 +178,15 @@
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
+            font-size: 0.95rem;
+            /* slightly smaller text */
         }
 
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+            filter: brightness(1.1);
+            /* slightly brighten on hover */
+            transform: scale(1.05);
+            /* gently scale up */
         }
 
         /* Hero Section */
@@ -153,8 +210,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(1deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(1deg);
+            }
         }
 
         .hero-content {
@@ -235,6 +299,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -465,12 +530,13 @@
             .form-row {
                 grid-template-columns: 1fr;
             }
-            
+
             .contact-form {
                 padding: 2rem 1.5rem;
                 margin: 1rem;
             }
         }
+
         footer {
             background: #1a1a1a;
             color: white;
@@ -491,7 +557,8 @@
             color: #667eea;
         }
 
-        .footer-section p, .footer-section a {
+        .footer-section p,
+        .footer-section a {
             color: #ccc;
             text-decoration: none;
             line-height: 1.8;
@@ -549,15 +616,18 @@
         }
     </style>
 </head>
+
 <body>
     <header>
-        <nav class="container">
+        <nav class="container nav-container">
             <div class="logo">SafeStart Medical</div>
             <ul class="nav-links">
                 <li class="dropdown">
-                    <a href="#services">Services ▼</a>
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Services ▼</button>
                     <div class="dropdown-content">
-                        <a href="https://securlinx.com/products/securport-healthcare/" target="_blank">SecurPort Security and Verification Solutions</a>
+                        <a href="https://securlinx.com/products/securport-healthcare/" target="_blank">
+                            SecurPort Security and Verification Solutions
+                        </a>
                     </div>
                 </li>
                 <li><a href="#about">About</a></li>
@@ -565,8 +635,9 @@
                 <li><a href="#path">PATH Portal</a></li>
             </ul>
             <a href="#contact" class="cta-button">Get Started</a>
-        <img src="/images/usi/usi_logo.png" alt="USI Logo" style="height:40px; margin-left:1rem;">
-</nav>
+            <img src="USI_Blu_wht_bckgd_rgb2.png" alt="USI Logo" style="height:40px; margin-left:1rem;">
+        </nav>
+
     </header>
 
     <main>
@@ -574,7 +645,8 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>The SafeStart Risk Mitigation Solution Special Offer for USI.com PATH Clients</h1>
-                    <p>We offer comprehensive risk mitigation services for the prevention of surgical never events. Your risk and patient safety are our priorities.</p>
+                    <p>We offer comprehensive risk mitigation services for the prevention of surgical never events. Your
+                        risk and patient safety are our priorities.</p>
                     <div class="hero-buttons">
                         <a href="#services" class="btn-primary">Explore Services</a>
                         <a href="#path" class="btn-secondary">PATH Portal Access</a>
@@ -590,32 +662,39 @@
                     <div class="feature-card animate-on-scroll">
                         <span class="feature-icon">📋</span>
                         <h3>EMR Augmentation</h3>
-                        <p>SafeStart augments your EMR with comprehensive information management processes to organize and share information required to safely start surgical procedures.</p>
+                        <p>SafeStart augments your EMR with comprehensive information management processes to organize
+                            and share information required to safely start surgical procedures.</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <span class="feature-icon">👥</span>
                         <h3>Collaborative Crosscheck Tool</h3>
-                        <p>Seamlessly displays complete end-to-end preoperative information, allowing surgeons, facilities, staff, and patients to share content and control of the patient preparation process.</p>
+                        <p>Seamlessly displays complete end-to-end preoperative information, allowing surgeons,
+                            facilities, staff, and patients to share content and control of the patient preparation
+                            process.</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <span class="feature-icon">🔍</span>
                         <h3>Gap Detection & Closure</h3>
-                        <p>Provides the digital environment to detect and close all gaps in the data set from patient intake through the preoperative area and operating room.</p>
+                        <p>Provides the digital environment to detect and close all gaps in the data set from patient
+                            intake through the preoperative area and operating room.</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <span class="feature-icon">🚫</span>
                         <h3>Never Event Elimination</h3>
-                        <p>Through continual sharing of image-rich information, SafeStart eliminates never events, patient-caused schedule delays, cancellations, and no-shows.</p>
+                        <p>Through continual sharing of image-rich information, SafeStart eliminates never events,
+                            patient-caused schedule delays, cancellations, and no-shows.</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <span class="feature-icon">📊</span>
                         <h3>Process Standardization</h3>
-                        <p>Ensures accuracy and patient safety required for precision care while relieving staff and patient anxiety through standardized compliance processes.</p>
+                        <p>Ensures accuracy and patient safety required for precision care while relieving staff and
+                            patient anxiety through standardized compliance processes.</p>
                     </div>
                     <div class="feature-card animate-on-scroll">
                         <span class="feature-icon">🛡️</span>
                         <h3>Culture of Safety</h3>
-                        <p>SafeStart deployment serves as a keystone habit that fosters development of an improved culture of safety throughout your surgical facility.</p>
+                        <p>SafeStart deployment serves as a keystone habit that fosters development of an improved
+                            culture of safety throughout your surgical facility.</p>
                     </div>
                 </div>
             </div>
@@ -644,10 +723,13 @@
             <div class="container">
                 <div class="cta-content animate-on-scroll">
                     <h2>Ready to Get Started?</h2>
-                    <p>Join other PATH clients who trust SafeStart Medical for their risk mitigation needs for the elimination of never events.</p>
+                    <p>Join other PATH clients who trust SafeStart Medical for their risk mitigation needs for the
+                        elimination of never events.</p>
                     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="#contact" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2rem;">Contact Us Today</a>
-                        <a href="https://usi.com" class="btn-secondary" target="_blank" style="color: #2c5aa0; border-color: #2c5aa0;">Visit USI.com PATH</a>
+                        <a href="#contact" class="cta-button" style="font-size: 1.1rem; padding: 1rem 2rem;">Contact Us
+                            Today</a>
+                        <a href="https://usi.com" class="btn-secondary" target="_blank"
+                            style="color: #2c5aa0; border-color: #2c5aa0;">Visit USI.com PATH</a>
                     </div>
                 </div>
             </div>
@@ -657,7 +739,7 @@
     <footer id="contact">
         <div class="container">
             <h2 class="section-title" style="color: white; margin-bottom: 2rem;">Contact Us</h2>
-            
+
             <form class="contact-form" id="contactForm">
                 <div class="form-row">
                     <div class="form-group">
@@ -669,12 +751,12 @@
                         <input type="text" id="lastName" name="lastName" required>
                     </div>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="organization">Organization *</label>
                     <input type="text" id="organization" name="organization" required>
                 </div>
-                
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="email">Email Address *</label>
@@ -685,17 +767,19 @@
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="helpMessage">How can we help you? *</label>
-                    <textarea id="helpMessage" name="helpMessage" placeholder="Please describe how SafeStart can assist with your risk mitigation needs..." required></textarea>
+                    <textarea id="helpMessage" name="helpMessage"
+                        placeholder="Please describe how SafeStart can assist with your risk mitigation needs..."
+                        required></textarea>
                 </div>
-                
+
                 <div class="bot-protection">
                     <label for="botCheck">To verify you're human, please answer: What is 5 + 3? *</label>
                     <input type="number" id="botCheck" name="botCheck" required min="8" max="8">
                 </div>
-                
+
                 <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
             </form>
 
