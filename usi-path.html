@@ -81,6 +81,31 @@
             }
         }
 
+        @media (max-width: 400px) {
+            header {
+                padding: 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                font-size: 1.25rem;
+                margin-bottom: 0.5rem;
+            }
+
+            nav {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                padding: 0.5rem 0;
+            }
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
