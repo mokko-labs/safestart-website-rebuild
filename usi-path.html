@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>SafeStart Medical - Advanced Healthcare Solutions for PATH Clients</title>
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
         }
 
@@ -59,6 +66,18 @@
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-section p,
+            .footer-section a {
+                text-align: center;
             }
         }
 
@@ -797,25 +816,26 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 SafeStart Medical, Inc. All rights reserved. | A trusted partner of USI.com PATH program</p>
+                <p>&copy; 2025 SafeStart Medical, Inc. All rights reserved. | A trusted partner of USI.com PATH program
+                </p>
             </div>
         </div>
     </footer>
 
     <script>
         // Contact form handling
-        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
             e.preventDefault();
-            
+
             const submitBtn = document.getElementById('submitBtn');
             const botCheck = document.getElementById('botCheck').value;
-            
+
             // Verify bot protection
             if (parseInt(botCheck) !== 8) {
                 alert('Please answer the verification question correctly.');
                 return;
             }
-            
+
             // Collect form data
             const formData = {
                 firstName: document.getElementById('firstName').value,
@@ -825,7 +845,7 @@
                 phone: document.getElementById('phone').value,
                 helpMessage: document.getElementById('helpMessage').value
             };
-            
+
             // Disable submit button
             submitBtn.disabled = true;
             submitBtn.textContent = 'Sending...';
@@ -874,7 +894,7 @@
             elements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
                 const elementVisible = 150;
-                
+
                 if (elementTop < window.innerHeight - elementVisible) {
                     element.classList.add('animated');
                 }
@@ -938,4 +958,5 @@
         }
     </script>
 </body>
+
 </html>
