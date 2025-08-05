@@ -165,7 +165,6 @@
         /* Hero Section */
         .hero {
             padding: 120px 0 80px;
-            text-align: center;
             color: white;
             position: relative;
             overflow: hidden;
@@ -197,6 +196,29 @@
         .hero-content {
             position: relative;
             z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .hero-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+            animation: fadeInRight 1s ease-out 0.3s both;
         }
 
         .hero h1 {
@@ -214,18 +236,64 @@
             font-size: 1.3rem;
             margin-bottom: 2rem;
             opacity: 0.9;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
             animation: fadeInUp 1s ease-out 0.2s both;
         }
 
         .hero-buttons {
             display: flex;
             gap: 1rem;
-            justify-content: center;
             flex-wrap: wrap;
             animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive breakpoints for hero section */
+        @media (max-width: 1024px) {
+            .hero-content {
+                gap: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .hero-image img {
+                max-width: 90%;
+            }
         }
 
         .btn-primary {
@@ -611,15 +679,20 @@
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>The SafeStart Risk Mitigation Solution Special Offer for USI.com PATH Clients</h1>
-                    <p>We offer comprehensive risk mitigation services for the prevention of surgical never events. Your
-                        risk and patient safety are our priorities.</p>
-                    <p
-                        style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 1rem; border-radius: 10px; backdrop-filter: blur(10px);">
-                        🎉 Special Offer: Sign up for two years and get 15% off the subscription price
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#services" class="btn-primary">Explore Services</a>
+                    <div class="hero-text">
+                        <h1>The SafeStart Risk Mitigation Solution Special Offer for USI.com PATH Clients</h1>
+                        <p>We offer comprehensive risk mitigation services for the prevention of surgical never events. Your
+                            risk and patient safety are our priorities.</p>
+                        <p
+                            style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95; font-weight: 600; background: rgba(255, 255, 255, 0.2); padding: 1rem; border-radius: 10px; backdrop-filter: blur(10px);">
+                            🎉 Special Offer: Sign up for two years and get 15% off the subscription price
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn-primary">Explore Services</a>
+                        </div>
+                    </div>
+                    <div class="hero-image pointer-events-none user-select-none rounded-xl overflow-hidden">
+                        <img src="images/safestart-app-screens.webp" alt="SafeStart App Screens" class="rounded-lg" />
                     </div>
                 </div>
             </div>
