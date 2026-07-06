@@ -15,7 +15,7 @@ export function CtaSection() {
           <p className="mt-2 text-muted-foreground">
             SafeStart works with or without an EMR.
           </p>
-          <Button asChild size="lg" className="mt-6">
+          <Button asChild size="xl" className="mt-6">
             <Link href="/contact">Request a Demo</Link>
           </Button>
         </div>

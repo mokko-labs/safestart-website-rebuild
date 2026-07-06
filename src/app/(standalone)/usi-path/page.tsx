@@ -140,7 +140,7 @@ export default function UsiPathPage() {
             <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
               <Button
                 asChild
-                size="lg"
+                size="xl"
                 className="bg-background text-primary hover:bg-background/90"
               >
                 <a href="#services">Explore Services</a>
@@ -219,7 +219,7 @@ export default function UsiPathPage() {
             Join other PATH clients who trust SafeStart Medical for their risk
             mitigation needs for the elimination of never events.
           </p>
-          <Button asChild size="lg" className="mt-8">
+          <Button asChild size="xl" className="mt-8">
             <a href="#contact">Contact Us Today</a>
           </Button>
         </div>

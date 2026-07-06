@@ -70,14 +70,14 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Button
               asChild
-              size="lg"
+              size="xl"
               className="bg-background text-primary hover:bg-background/90"
             >
               <Link href="/contact">Request a Demo</Link>
             </Button>
             <Button
               asChild
-              size="lg"
+              size="xl"
               variant="outline"
               className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
             >
