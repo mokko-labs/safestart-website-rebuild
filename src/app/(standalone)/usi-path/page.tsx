@@ -117,7 +117,7 @@ export default function UsiPathPage() {
       </header>
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-foreground via-foreground to-primary/60 text-background">
+      <section className="bg-primary text-primary-foreground">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2">
           <div className="text-center lg:text-left">
             <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
@@ -130,12 +130,19 @@ export default function UsiPathPage() {
               are our priorities.
             </p>
             <p className="mt-6 flex items-center justify-center gap-3 border border-background/25 bg-background/10 p-4 font-semibold backdrop-blur lg:justify-start">
-              <Sparkles className="size-5 shrink-0 text-primary" aria-hidden />
+              <Sparkles
+                className="size-5 shrink-0 text-primary-foreground"
+                aria-hidden
+              />
               Special Offer: Sign up for two years and get 15% off the
               subscription price
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
-              <Button asChild size="lg">
+              <Button
+                asChild
+                size="lg"
+                className="bg-background text-primary hover:bg-background/90"
+              >
                 <a href="#services">Explore Services</a>
               </Button>
             </div>
@@ -191,11 +198,11 @@ export default function UsiPathPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-foreground text-background">
+      <section className="bg-primary text-primary-foreground">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 text-center sm:grid-cols-3 sm:px-6">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <p className="font-heading text-5xl font-bold text-primary brightness-150">
+              <p className="font-heading text-5xl font-bold text-primary-foreground">
                 {stat.value}
               </p>
               <p className="mt-1 text-lg opacity-85">{stat.label}</p>

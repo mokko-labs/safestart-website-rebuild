@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-foreground text-background">
+      <section className="bg-primary text-primary-foreground">
         <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
           <h1 className="text-4xl sm:text-5xl">Contact Us</h1>
-          <p className="mx-auto mt-4 max-w-xl opacity-85">
+          <p className="mx-auto mt-4 max-w-xl opacity-90">
             Request a demo or ask us anything — we&apos;ll get back to you
             shortly.
           </p>

@@ -18,7 +18,7 @@ export default function SignupPage() {
   return (
     <>
       {/* Hero header */}
-      <section className="bg-gradient-to-br from-foreground via-foreground to-primary/60 text-background">
+      <section className="bg-primary text-primary-foreground">
         <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-24">
           <Link
             href="/"
@@ -26,7 +26,7 @@ export default function SignupPage() {
             aria-label="SafeStart home"
           >
             <CircleCheckBig
-              className="size-14 text-primary brightness-150"
+              className="size-14 text-primary-foreground"
               aria-hidden
             />
             <h1 className="font-heading text-4xl font-bold tracking-tight group-hover:underline sm:text-5xl">

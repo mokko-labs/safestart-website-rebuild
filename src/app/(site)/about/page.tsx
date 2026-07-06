@@ -71,10 +71,13 @@ export default function AboutPage() {
   return (
     <>
       {/* Who We Are */}
-      <section className="bg-foreground text-background">
+      <section className="bg-primary text-primary-foreground">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
           <h1 className="text-4xl font-bold sm:text-5xl">Who We Are</h1>
-          <div className="mx-auto mt-4 h-1 w-16 bg-primary" aria-hidden />
+          <div
+            className="mx-auto mt-4 h-1 w-16 bg-primary-foreground/50"
+            aria-hidden
+          />
           <p className="mt-8 text-lg opacity-85">
             SafeStart Medical is the result of a career-long passion for
             patient safety. Despite health care information technology and the

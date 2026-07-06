@@ -57,10 +57,13 @@ export default function VideosPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }}
       />
       {/* Page header */}
-      <section className="bg-foreground text-background">
+      <section className="bg-primary text-primary-foreground">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
           <h1 className="text-4xl font-bold sm:text-5xl">Videos</h1>
-          <div className="mx-auto mt-4 h-1 w-16 bg-primary" aria-hidden />
+          <div
+            className="mx-auto mt-4 h-1 w-16 bg-primary-foreground/50"
+            aria-hidden
+          />
           <p className="mt-8 text-lg opacity-85">
             See SafeStart in action — from the patient experience to the
             technology that keeps every procedure safe and on time.

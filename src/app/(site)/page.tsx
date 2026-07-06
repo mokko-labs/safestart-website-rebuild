@@ -54,26 +54,32 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-foreground via-foreground to-primary/60 text-background">
+      <section className="bg-primary text-primary-foreground">
         <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
           <h1 className="mx-auto max-w-3xl text-4xl font-bold sm:text-5xl lg:text-6xl">
             We help you prevent{" "}
-            <span className="text-primary brightness-150">Never Events</span>
+            <span className="underline decoration-primary-foreground/40 decoration-4 underline-offset-8">
+              Never Events
+            </span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg opacity-85">
+          <p className="mx-auto mt-6 max-w-2xl text-lg opacity-90">
             SafeStart Medical&apos;s solution is the key to mitigating surgical
             never-event errors — ensuring that wrong patient, wrong site, and
             wrong operation errors are a thing of the past.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Button asChild size="lg">
+            <Button
+              asChild
+              size="lg"
+              className="bg-background text-primary hover:bg-background/90"
+            >
               <Link href="/contact">Request a Demo</Link>
             </Button>
             <Button
               asChild
               size="lg"
               variant="outline"
-              className="border-background/40 bg-transparent text-background hover:bg-background/10 hover:text-background"
+              className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
             >
               <Link href="/videos">Watch a Video</Link>
             </Button>
@@ -93,19 +99,19 @@ export default function HomePage() {
       </section>
 
       {/* Created by a surgeon */}
-      <section className="bg-foreground text-background">
+      <section className="bg-secondary">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6">
           <h2 className="text-3xl sm:text-4xl">
             Created by a surgeon with a passion for safety
           </h2>
           <div className="mx-auto mt-3 h-1 w-16 bg-primary" aria-hidden />
-          <p className="mt-8 text-lg opacity-85">
+          <p className="mt-8 text-lg text-muted-foreground">
             SafeStart&apos;s mobile, cloud-based, HIPAA-compliant technology
             organizes and displays the patient record and adds
             surgeon-annotated site photos, key images, allergies, consent
             forms, and more.
           </p>
-          <p className="mt-6 text-lg opacity-85">
+          <p className="mt-6 text-lg text-muted-foreground">
             Multiple record reviews and sign-offs by clinical staff, and the
             patient, allow procedures to start safely and on time.
           </p>
@@ -178,7 +184,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-foreground text-background">
+      <section>
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <h2 className="text-center text-3xl sm:text-4xl">
             What clinicians say
@@ -187,15 +193,15 @@ export default function HomePage() {
             {testimonials.map((t) => (
               <figure
                 key={t.id}
-                className="flex flex-col gap-4 border border-background/15 p-6"
+                className="flex flex-col gap-4 border border-border bg-card p-6"
               >
                 <Quote className="size-6 text-primary" aria-hidden />
-                <blockquote className="flex-1 text-sm leading-relaxed opacity-90">
+                <blockquote className="flex-1 text-sm leading-relaxed text-muted-foreground">
                   {t.quote}
                 </blockquote>
                 <figcaption className="text-sm">
                   <span className="font-semibold">— {t.author}</span>{" "}
-                  <span className="opacity-70">{t.title}</span>
+                  <span className="text-muted-foreground">{t.title}</span>
                 </figcaption>
               </figure>
             ))}
