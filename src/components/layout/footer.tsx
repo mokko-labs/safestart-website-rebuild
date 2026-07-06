@@ -32,12 +32,12 @@ export function Footer() {
             <h2 className="text-xs font-semibold uppercase tracking-wider opacity-70">
               {col.heading}
             </h2>
-            <ul className="mt-3 space-y-2">
+            <ul className="mt-2">
               {col.links.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-sm opacity-90 transition-opacity hover:opacity-100 hover:underline"
+                    className="inline-block py-1.5 text-sm opacity-90 transition-opacity hover:opacity-100 hover:underline"
                   >
                     {link.label}
                   </Link>

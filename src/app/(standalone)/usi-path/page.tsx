@@ -144,6 +144,7 @@ export default function UsiPathPage() {
             src={appScreens}
             alt="SafeStart app screens"
             priority
+            quality={60}
             className="pointer-events-none w-full select-none"
             sizes="(max-width: 1024px) 100vw, 560px"
           />
@@ -228,7 +229,7 @@ export default function UsiPathPage() {
 
           <div className="mt-14 grid gap-10 sm:grid-cols-2">
             <div>
-              <h3 className="text-lg font-semibold text-primary brightness-150">
+              <h3 className="text-lg font-semibold text-accent">
                 Contact Information
               </h3>
               <div className="mt-3 space-y-1 text-sm opacity-85">
@@ -238,7 +239,7 @@ export default function UsiPathPage() {
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-primary brightness-150">
+              <h3 className="text-lg font-semibold text-accent">
                 Quick Links
               </h3>
               <ul className="mt-3 space-y-1 text-sm">

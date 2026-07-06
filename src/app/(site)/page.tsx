@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Quote, MonitorSmartphone } from "lucide-react";
+import {
+  Quote,
+  MonitorSmartphone,
+  ShieldCheck,
+  HeartHandshake,
+  CalendarClock,
+} from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { VideoEmbed } from "@/components/video-embed";
@@ -10,9 +16,6 @@ import { featuredVideo, testimonials } from "@/lib/data";
 import { videoPosters } from "@/lib/video-posters";
 
 import eventsImage from "@/assets/events.jpg";
-import tabNeverEvents from "@/assets/tab11.jpg";
-import tabEngagement from "@/assets/tab12.jpg";
-import tabDelays from "@/assets/tab13.jpg";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
 const features = [
   {
     title: "Eliminate Never Event Risk",
-    image: tabNeverEvents,
+    icon: ShieldCheck,
     paragraphs: [
       "Never Events are unacceptable, avoidable, and cause great harm to patients as well as negatively impacting doctors, nurses, and their facilities.",
       "SafeStart is designed to eliminate wrong patient, wrong procedure, and wrong site Never Events by using enhanced and vetted clinical information.",
@@ -31,7 +34,7 @@ const features = [
   },
   {
     title: "Increase Patient Engagement",
-    image: tabEngagement,
+    icon: HeartHandshake,
     paragraphs: [
       "Engaged patients lead to improved health outcomes, better patient care, and lower costs.",
       "SafeStart's design includes the patient and family as part of the care team that includes the facility and anesthesia service.",
@@ -39,7 +42,7 @@ const features = [
   },
   {
     title: "Reduce Delay and Cancellations",
-    image: tabDelays,
+    icon: CalendarClock,
     paragraphs: [
       "Reduce Delays, Cancellations, and No Shows that disrupt patient flow, increase operational costs, raise patient anxiety and cause revenue loss.",
       "All stakeholders vet SafeStart's comprehensive, graphically rich patient care documents multiple times before the patient arrives at the preoperative area — streamlining a safe care process so procedures can start on time.",
@@ -85,6 +88,7 @@ export default function HomePage() {
           hash={featuredVideo.hash}
           title={featuredVideo.title}
           poster={videoPosters[featuredVideo.vimeoId]}
+          priority
         />
       </section>
 
@@ -154,13 +158,12 @@ export default function HomePage() {
                 key={feature.title}
                 className="flex flex-col border border-border bg-card"
               >
-                <Image
-                  src={feature.image}
-                  alt=""
-                  className="aspect-[3/2] w-full object-cover"
-                  sizes="(max-width: 768px) 100vw, 373px"
-                />
                 <div className="flex flex-1 flex-col gap-3 p-6">
+                  <feature.icon
+                    className="size-10 text-primary"
+                    strokeWidth={1.5}
+                    aria-hidden
+                  />
                   <h3 className="text-xl">{feature.title}</h3>
                   {feature.paragraphs.map((p) => (
                     <p key={p} className="text-sm text-muted-foreground">
