@@ -1,0 +1,136 @@
+[
+  {
+    "id": "richard-vazquez",
+    "name": "Dr. Richard Vazquez",
+    "credentials": "MD, FACS",
+    "role": "CEO/CMO",
+    "image": "member11.png",
+    "bio": [
+      "Dr. Vazquez practiced general surgery at Northwestern Memorial Hospital in Chicago for 40 years and created the SafeStart pre-invasive procedure system to eliminate never events and stop risk that harms patients, staff, and the facility. He remains Assistant Clinical Professor of Surgery and member of the faculty of the Feinberg School of Medicine at Northwestern University as an associate faculty member.",
+      "Dr. Vazquez is certified by the American Board of Surgery and is a Fellow of the American College of Surgeons. Dr. Vazquez is a serial entrepreneur and is the Founder-CMO/CEO/of SafeStart Medical, Inc. Dr. Vazquez remains affiliated at MATTER Chicago HIT incubator and frequently gives educational sessions on surgical safety.",
+      "Dr. Vazquez sits on the advisory boards of Xuron and Artificial Intelligence Healthcare Capital. He is currently the Director of Innovation and Entrepreneurship, Medical Informatics at Northwestern University Feinberg School of Medicine."
+    ]
+  },
+  {
+    "id": "jim-anfield",
+    "name": "Jim Anfield",
+    "credentials": "BS, MS, MBA",
+    "role": "CTO",
+    "image": "member2.jpg",
+    "bio": [
+      "Senior executive experienced in information technology, strategic planning, and finance, program management with specific market expertise across several different industries including health care and manufacturing. Proven ability to strategize, propose and manage new business opportunities. Consistently successful in analyzing emerging market trends in order to capitalize on these opportunities. Critical thinker and innovative problem solver able to bridge effectively between business and technology worlds. Results focused and proven effective leader able to motivate diverse teams across both internal and external organizations. Published author and conference speaker.",
+      "Fluent and experienced in outsourcing and insourcing, IT strategy, consulting, financial modeling, program management, business case development, budgeting and capital analysis, benchmarking, management consulting, performance analysis, process improvement, strategic planning, optimization, governance, project management, contract negotiation, vendor management, and IT transformation, and mobile."
+    ]
+  },
+  {
+    "id": "spencer-l-byrum",
+    "name": "Spencer L. Byrum",
+    "role": "Chief Executive Officer, HRS Consulting, Inc.",
+    "image": "member3.jpg",
+    "bio": [
+      "Spencer L. Byrum is a founding member and the Chief Executive Officer of HRS Consulting, Inc., a premier human performance improvement company that was specifically created and designed to enhance individual and team decision making in high-risk industries. Mr. Byrum\u2019s specialty is taking lessons learned in aviation and other dangerous occupations and developing innovative process improvements and training for professions in which people need to make critical decisions in a stressful, demanding environment.",
+      "Since becoming integrally involved in healthcare almost 20 years ago, Mr. Byrum has worked with over 600 healthcare facilities ranging from major tertiary care centers to Ambulatory Surgery Centers to Critical Access Hospitals. He has developed tools for the quantitative and qualitative assessment of the processes associated with the HAIs, SSIs, H&Ps, Informed Consent, Surgical Time Out, Surgical Site Marking, Surgical Counts, Medication Errors, and other processes that have been implemented by some of the largest healthcare institutions and companies in the country. Mr. Byrum has deep experience in assessing over 1,000,000 \u201cnear miss and sentinel events\u201d and is an expert in evaluation of the causal factors and remediation of their impact. Finally, Mr. Byrum\u2019s programs have been recognized by major insurers to reduce losses, leading to medical malpractice premium reductions for physicians and facility premium reductions for individual hospitals and related healthcare entities. Mr. Byrum is also the author of High Reliability for a Highly Unreliable World released in January 2018."
+    ]
+  },
+  {
+    "id": "lee-d-flowers",
+    "name": "Lee D. Flowers",
+    "role": "President, HRS Consulting, Inc.",
+    "image": "member4.jpg",
+    "bio": [
+      "Lee D. Flowers is a founding Member and President of HRS Consulting, Inc. A graduate of the University of Kentucky, with a BS in biology, he is a senior corporate executive with extensive experience leading product development and operations, major performance improvement initiatives and operational turnarounds in complex global businesses.",
+      "Throughout his career, Mr. Flowers has led the planning and execution of effective \u201ctop to bottom\u201d change in highly regulated, complex organizations with entrenched cultures and critical day to day operations. In addition to his extensive industrial background, he has conducted numerous engagements on safety and performance improvements in large and small hospitals, outpatient clinics, ambulatory surgery centers and rehabilitation centers focusing on perioperative, critical care, emergency and med-surg services. He has served as a consultant on expert committees of healthcare organizations for applying proven high reliability organization techniques to enhance communications, teamwork and training to achieve safety and performance improvements that drive reductions in adverse events, claims and improvements in productivity."
+    ]
+  },
+  {
+    "id": "george-r-cybulski",
+    "name": "George R. Cybulski",
+    "credentials": "MD, MBA",
+    "role": "Advisory Board",
+    "bio": [
+      "Dr. Cybulski Is the author of an Amazon # 1 Bestseller, \u201cCan We Manage to Save Healthcare?\u201d This book represents a synopsis of the experiences with the frailties of the United States healthcare system that Dr. Cybulski has encountered as a practicing Neurosurgeon and entrepreneur devising platforms such as SafeStart to address the significant issue of patient safety in the Operating Room. Dr. Cybulski has gone behind the scene to participate in the supply chain of the operating room as well (CMO, Vested Medical Inc. 2019-2021). Currently he is the developer of an Artificial Intelligence (A I) platform for spine care at Humboldt Park Health, Chicago. Dr. Cybulski completed an MBA in Health Care Management at Loyola University in 2010. Dr. Cybulski advises companies on the value proposition for health care delivery and has lectured and written on the effect of health care reform on specialty services"
+    ],
+    "image": "george-r-cybulski.jpg"
+  },
+  {
+    "id": "randal-ostroff",
+    "name": "Randal Ostroff",
+    "credentials": "MD",
+    "role": "Advisory Board",
+    "bio": [
+      "Dr. Randall Ostroff, MD a board certified anesthesiologist who spent 20 of his more than 30 years of clinical anesthesia practice as Chairman & Medical Director, Department of Anesthesiology at MacNeal Hospital in Berwyn, IL. Dr. Ostroff received his MD at The Chicago Medical School and completed his residency in Anesthesiology at Michael Reese Hospital in Chicago. Dr. Ostroff also has considerable experience in the pharmaceutical industry. During his 8 years as a Global Medical Director for Abbott his accomplishments included 2 Presidents Awards. He has served as a consultant to several pharmaceutical companies for nearly 20 years. From 2016-2020 he served as the medical lead during the US phase 3 clinical trials for a novel IV sedative, Byfavo (remimazolam), which received FDA approval in July 2020. He continues to be a consultant and speaker for Byfavo (remimazolam) and deliver clinical anesthesia at the Surgery Center at 900 N. Michigan Ave in Chicago."
+    ],
+    "image": "randal-ostroff.jpg"
+  },
+  {
+    "id": "douglas-e-ott",
+    "name": "Douglas E. Ott",
+    "credentials": "MD, MBA",
+    "role": "Advisory Board",
+    "bio": [
+      "Douglas E. Ott, MD, MBA is a physician, scientist, and businessman. Dr. Ott received his MD from University of Louisville and his MBA from Mercer University. He is Adjunct Professor Biomedical Engineering and Adjunct Professor of Business and Economics at Mercer University. Dr. Ott also is the chair of the Clinical Advisory Board for The American Institute of Minimally Invasive Surgery, and an advisor for Stealth Learning. He has received multiple awards for his exemplary work. Dr. Ott was the recipient of the 1992 ASLMS Basic Science Research Award. In 1999 and 2004 he received the Kott Award for Best New Instrumentation, the 2001 Kurt Semm Award from AAGL. In 2010 he was the recipient of the SLS Excel award, as well as numerous international awards for prize papers and research. Dr. Ott founded 3 medical companies; LEXION Medical, Hemerus Medical and COAG. He serves on the board of Directors of LEXION and COAG, and currently holds 38 patents."
+    ],
+    "image": "douglas-e-ott.jpg"
+  },
+  {
+    "id": "david-harris",
+    "name": "David Harris",
+    "role": "Advisory Board",
+    "bio": [
+      "David Harris brings over 30 years of experience developing customer-driven products. His expertise is in management of multi-discipline teams to minimize development costs and time to market. His work in healthcare spans patient transport, material management, logistics, and video integration systems for industry leaders such as Midmark, Hill-Rom, Herman Miller, ALM Surgical Equipment, Inc., Global Device Management, and Skytron.",
+      "He also headed development for a number of seminal healthcare technology projects, including the Midmark Pediatric Crib, 405 Patient Transport System, medLYNK\u2122 computerized pharmaceutical mobile cart, ALM C-Max operating room tables, and Skytron Linx 300 Video Integration. A leader in collaborative process, in 1993 he created the Megateam\u00a9 fast track, a market-driven product development methodology for cross discipline teams recognized by the Design Management Institute."
+    ],
+    "image": "david-harris.jpg"
+  },
+  {
+    "id": "robert-m-vogelzang",
+    "name": "Robert M. Vogelzang",
+    "credentials": "MD",
+    "role": "Advisory Board",
+    "bio": [
+      "Robert M. Vogelzang, MD is The Albert A Nemcek Professor of Interventional Radiology at Northwestern University Feinberg School of Medicine, and served as Chief of Vascular and Interventional Radiology, one of the largest IR sections in the United States. Dr Vogelzang has been a principal investigator or a coinvestigator on numerous clinical trials, has participated in over 400 lectures, symposia, and conferences, and has published more than 180 peer-reviewed articles, abstracts, and book chapters. Dr Vogelzang served as President of the Society of Interventional Radiology (SIR) and has served on numerous committees of the SIR and the American College of Radiology. Dr Vogelzang received his medical degree from the Chicago Medical School, completed a residency in diagnostic radiology and a fellowship in interventional radiology and cross sectional imaging at Northwestern University Medical School. He is board certified in Vascular and Interventional Radiology."
+    ],
+    "image": "robert-m-vogelzang.jpg"
+  },
+  {
+    "id": "richard-h-pearl",
+    "name": "Richard H. Pearl",
+    "credentials": "MD, FACS, FAAP, FRCS",
+    "role": "Advisory Board",
+    "bio": [
+      "Richard H. Pearl MD set a high bar for academic excellence, surgical innovation, and professional integrity through his 38 year clinical career and exemplary academic teaching. The US military recognized him with numerous military decorations and his peers have globally recognized his achievements in pediatric surgery across public and private health sector domains. Dr. Pearl completed a General Surgery Residency at Harvard Surgical Service, New England Deaconess Hospital in Boston Massachusetts and a Pediatric Surgery Fellowship at the hospital of Sick Children in Toronto, Canada, where he later became Chief of Pediatric Surgery. In conjunction with this medical training and service as a Colonel in the U.S. Army, he received numerous military honors including the Bronze Star with 2 oak leaf clusters and Legion of Merit during his distinguished military career spanning from 1966-1994. From 1988-1994 he served his country as Chief, Pediatric Surgical Service at Walter Reed Army Medical Center.",
+      "To name just a few of Dr. Pearl\u2019s numerous academic and professional positions and honors, Dr. Pearl is Professor of Surgery and Pediatrics (Emeritus) at the University of Illinois College of Medicine in Peoria, and was Chief, Section of Pediatric Surgery, Attending Team Leader of the General Surgery Residency Pediatric Surgery Service, and Director of the Pre-Op Case Conference. He received the 2002-2003 UICOMP Faculty of the Year Award and the UIC all campus Faculty of the Year award as well. The resident class of 2010 voted Dr. Pearl \u2018Teacher of the Year\u2019. For 20 years he was Children\u2019s Hospital of Illinois Surgeon-in-Chief from 1998-2018 and directed Pediatric Trauma as well. Dr. Pearl fulfilled a professional dream by playing a pivotal role in the development and construction of the world class Jump Trading Simulation and Education Center where he served as the Director of the ACS Surgical Simulation Fellowship. Dr. Pearl is the father of three daughters, is recently retired from active practices but still serves on three boards at OSF and is active in activities at UICOMP."
+    ],
+    "image": "richard-h-pearl.jpg"
+  },
+  {
+    "id": "steve-serota",
+    "name": "Steve Serota",
+    "credentials": "BS, MHA",
+    "role": "Advisory Board",
+    "bio": [
+      "Steven Serota is the President and Chief Operating Officer of Wisconsin Diagnostic Laboratories in Milwaukee, Wisconsin. Prior to his role at WDL, Mr. Serota lead Surgical Services, Laboratory Services and built a Speciality Pharmacy for Northwestern Medicine, as well as leading Peri-operative services for Rush Medical Center. Mr. Serota holds a BS in Psychology from Bradley University in Peoria and MHA from Rush University in Chicago. Mr. Serota has extensive experience in operational improvement and M&A with a keen interest in patient centric healthcare optimization through clinical care redesign. Mr. Serota focuses on driving value through operational efficiency, strategic partnerships and optimizing the patient experience."
+    ],
+    "image": "steve-serota.jpg"
+  },
+  {
+    "id": "katherine-lee",
+    "name": "Katherine Lee",
+    "credentials": "RN, BSN, CPHRM, PhD",
+    "role": "Advisory Board",
+    "bio": [
+      "Katherine Lee, DNP, RN, CPHRM, CMPE, has been a dedicated healthcare professional since 1996, with extensive experience in ambulatory care. Her diverse background includes inpatient nursing in cardiac care, medical and surgical intensive care, post-anesthesia care, clinical program development, and nursing education. Katherine has carved out a specialized niche as a Registered Nurse in the oral and maxillofacial surgery field, excelling as a practice administrator, nurse, clinical educator, risk manager, and clinical consultant. In addition to her varied roles, Katherine serves as a dental facility inspector for the Tennessee Board of Dentistry, ensuring compliance and safety in sedation and anesthesia practices. Recognized by her peers for her strong advocacy for patient safety, she is a valuable resource for safe patient care in outpatient medical and dental settings. Katherine holds certifications as a Professional in Healthcare Risk Management from the American Hospital Association and as a Medical Practice Executive from the American College of Medical Practice Executives. She is driven by a passion for patient safety, underscored by her Master of Science in Nursing with a concentration in Quality, Safety, and Risk Management from Drexel University and her Doctor of Nursing Practice from Belmont University. Her professional focus remains on the outpatient and office-based care settings, with a particular interest in dental and medical practices that administer anesthesia and sedation."
+    ],
+    "image": "katherine-lee.jpg"
+  },
+  {
+    "id": "mark-stega",
+    "name": "Mark Stega",
+    "credentials": "MD",
+    "role": "Advisory Board",
+    "bio": [
+      "Mark has been a thought leader in the health care industry for more than 25 years, introducing new and innovative ways of using information technology. As founder and chief executive officer of one of the first electronic medical records (EMR) companies, he has worked with healthcare executives in over 1,400 health systems. He successfully grew and then sold QMI to GE Medical Systems where he served as chief technical officer for Marquette Medical Systems, a division of GE Medical. Mark earned his BS in Computer Science at the University of Maryland and completed his Doctor of Medicine Degree at the University of Maryland School of Medicine. In addition, he is a graduate of the Dartmouth Amos Tuck School of Business Corporate Executive Leadership Program."
+    ],
+    "image": "mark-stega.jpg"
+  }
+]

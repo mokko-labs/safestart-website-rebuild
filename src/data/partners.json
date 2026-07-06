@@ -1,0 +1,26 @@
+[
+  {
+    "id": "hrs-consulting",
+    "name": "HRS Consulting",
+    "image": "partners31.png",
+    "url": "https://hrsconsults.com/"
+  },
+  {
+    "id": "usi",
+    "name": "USI",
+    "image": "partners7.png",
+    "url": "https://www.usi.com/"
+  },
+  {
+    "id": "securlinx",
+    "name": "SecurLinx",
+    "image": "partners8.png",
+    "url": "https://securlinx.com/"
+  },
+  {
+    "id": "matter",
+    "name": "MATTER",
+    "image": "partners6.jpg",
+    "url": "https://matter.health/"
+  }
+]

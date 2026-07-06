@@ -1,0 +1,48 @@
+[
+  {
+    "id": "usi-co-marketing-agreement",
+    "date": "",
+    "title": "SafeStart Medical proudly announces the signing of a co-marketing agreement with USI.com.",
+    "summary": "USI is a middle market insurance broker. What truly distinguishes USI as a premier insurance brokerage and consulting firm is the USI ONE PATH™, a game-changing value proposition that delivers to clients a robust set of risk management and benefit solutions with bottom line financial impact. USI ONE® represents Omni, Network, Enterprise—the three key elements that set USI apart from the competition.",
+    "body": [
+      "USI sought out SafeStart as a vendor of a surgical risk management solution that eliminates never events for their client, the facility, staff, and patient.",
+      "USI clients can choose to enter USI PATH™. “PATH is USI’s new game-changing platform that guides you through the entire risk control process, from identifying sources of loss to targeting solutions that maximize your return on investment.” Risk areas such as Infection control, fall prevention, surgical errors, etc. are listed. Users may select SafeStart Medical’s safety system that eliminates surgical never events from the surgical errors domain.",
+      "SafeStart Medical offers USI client preferred pricing for deployment of SafeStart® and annual subscription/renewal. A USI provides ROI calculators to calculate 1-5 yr expected expense for never events minus the cost of the SafeStart subscription to eliminate the never events.",
+      "SafeStart will construct a landing page viewable by USI customers that contains more in depth information about SafeStart™ and its channel partner SecurPort™ by SecurLinx. USI does not charge vetted vendors for being listing in PATH. USI provides SafeStart with leads (not qualified)."
+    ],
+    "image": "newsletter1.png"
+  },
+  {
+    "id": "patient-safety-day-2024",
+    "date": "2024-09-17",
+    "title": "RISK, SAFETY, QUALITY NEWS & REVIEWS – PATIENT SAFETY DAY AND USA CONSTITUTION DAY SEPTEMBER 17, 2024",
+    "summary": "Today we celebrate patient safety day but more importantly we should celebrate patient safety every day of every year. On September 17, 1787, our safety as citizens of the USA approached reality when the framers of the Constitution of the United States of America signed off its completion. So we have much to celebrate today and to be thankful for. We must be guided by the Hippocratic Oath circa 400 BC “the physician pledges to prescribe only beneficial treatments, according to his [SIC or her] abilities and judgment; to refrain from causing harm or hurt; and to live an exemplary personal and professional life”. (Encyclopedia Britannica).",
+    "body": [
+      "Physicians today need to reaffirm their commitment to prescribe only treatments or procedures that are beneficial to the patient. Clearly this concept merges into obtaining a proper informed consent an important subject itself that I will discuss more than once in the future.",
+      "Only physicians not federal agencies care for patients and only physicians in consultation with their patients should deliver treatment that both deem safe and effective for the patient’s problem.",
+      "A new demon for us are those who put profits before patients",
+      "The phrase “Putting patients before profits” must be a familiar refrain all the more today. When physicians wear out they may sell their practices to private equity who have a fiduciary duty to shareholders but not to the patient. They tend to always make decisions for a financial profit motive and not for the delivery of optimal care to the patient.",
+      "This certainly smacks of a serious conflict of interest since profit for the shareholders becomes king and deposes the patients from their position of prominence as being the most important stakeholder in the healthcare delivery system.",
+      "Let us remember to always put patients and patient safety before profit. Curiously, safety and speed go well together but that is a subject for another that may be beyond comprehension of non-clinical C suite members."
+    ],
+    "image": "newsletter2.png"
+  },
+  {
+    "id": "informed-consent-process-perversions",
+    "date": "",
+    "title": "RISK, SAFETY, QUALITY NEWS & REVIEWS",
+    "summary": "Stories about Informed consent process perversions.",
+    "body": [
+      "1. Blue Ink signature by the physician in the preoperative area only. NO BLACK INK PERMITTED. No photocopies of the consent permitted either. Why did the facility enforce this rule? Some surgeons called the preoperative area to ask that their patient be transported into the operating room when the surgeon was actually not in the immediate area or worse. The facility required a fresh blue ink consent signature by the surgeon for the prevention of surgeon truancy. To this end they disabled the EHR from printing a blank consent form in the surgeons office.",
+      "2. The next facility forbid surgeons to bring signed consents from their office to the preoperative area nor did they permit the surgeons to sign the informed consent. How did this happen? A policy designed by the chief nurse that the nurses at the surgery center were better than their surgeons at creating the consent forms that relied on the surgery schedule and the patient’s office records for correct information. The first time that patients saw a consent form was when it was presented to them for signature in the preop area of the surgery center.",
+      "3. Another interesting process perversion used as an excuse for not obtaining an informed consent at the time of surgical consultation was that the surgeons believed that the transmission of information to the patient would take place from the time that the patient was scheduled all the way up until the patient was processed in the preoperative holding area.",
+      "SafeStart shares the entire pre-procedure patient record with the patient through a web based patient portal at the end of their visit with the surgeon or other proceduralist.",
+      "The SafeStart system of closed loop communication encourages the patient to carefully review their entire clinical record including an informed consent preferably filled out and signed by the patient and surgeon.",
+      "True that SafeStart can be used and altered to accommodate such informed consent process deviations but we recommended using SafeStart as directed and that consent forms be filled out completely and signed by the physician and patient when possible at the time of approval of the operation by the surgeon.",
+      "Widespread adoption of SafeStart for the preoperative patient care process is long overdue. So please rally and schedule a call or demo with us.",
+      "Now is the best time to boost the culture of safety and optimize the care of your pre-invasive procedure patients to benefit all stakeholders and eliminate risk due to system errors that cause never events.",
+      "SafeStart can be reached by text message 1 312-296-2019 or by email info@safestartmedical.com or Schedule a 30 minute call with Dr. Vazquez"
+    ],
+    "image": "newsletter1.png"
+  }
+]

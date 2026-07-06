@@ -1,0 +1,47 @@
+[
+  {
+    "id": "adult-patient",
+    "vimeoId": "1011130646",
+    "title": "Adult Patient",
+    "description": "See how SafeStart guides adult patients through the surgical safety process.",
+    "category": "patient",
+    "featured": true
+  },
+  {
+    "id": "pediatric-patient",
+    "vimeoId": "1011136954",
+    "title": "Pediatric Patient",
+    "description": "See how SafeStart guides pediatric patients and their families through the surgical safety process.",
+    "category": "patient"
+  },
+  {
+    "id": "securstart-explainer",
+    "vimeoId": "888251107",
+    "title": "SecurStart Explainer Video",
+    "description": "An explainer video for SecurStart, SafeStart's biometric identity verification integration.",
+    "category": "explainer",
+    "hash": "3fd111decc"
+  },
+  {
+    "id": "securstart-explainer-plus",
+    "vimeoId": "1025406029",
+    "title": "Explainer video Securstart +",
+    "description": "The updated SecurStart explainer video, embedded on the USI PATH page.",
+    "category": "explainer",
+    "hash": "3fd111decc"
+  },
+  {
+    "id": "safestart-archive-1",
+    "vimeoId": "224414725",
+    "title": "SafeStart Archive Video 1",
+    "description": "An earlier SafeStart video from the legacy site archive.",
+    "category": "archive"
+  },
+  {
+    "id": "safestart-archive-2",
+    "vimeoId": "224414969",
+    "title": "SafeStart Archive Video 2",
+    "description": "An earlier SafeStart video from the legacy site archive.",
+    "category": "archive"
+  }
+]
