@@ -15,6 +15,7 @@ import tabEngagement from "@/assets/tab12.jpg";
 import tabDelays from "@/assets/tab13.jpg";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   description:
     "SafeStart Medical's surgical safety system eliminates wrong patient, wrong site, and wrong procedure Never Events while engaging patients and starting procedures on time.",
 };
