@@ -127,17 +127,18 @@ export default function AboutPage() {
         <h2 className="text-center text-3xl sm:text-4xl">Our Partners</h2>
         <ul className="mt-12 grid grid-cols-2 items-center gap-8 md:grid-cols-4">
           {partners.map((partner) => (
-            <li key={partner.id} className="flex items-center justify-center">
+            <li key={partner.id} className="h-full">
               <a
                 href={partner.url}
                 target="_blank"
                 rel="noopener"
                 title={partner.name}
+                className="group flex h-full w-full cursor-pointer select-none items-center justify-center p-4"
               >
                 <Image
                   src={partnerImages[partner.image]}
                   alt={`${partner.name} logo`}
-                  className="grayscale hover:grayscale-0 transition max-h-24 w-auto"
+                  className="pointer-events-none max-h-24 w-auto grayscale transition group-hover:grayscale-0"
                   sizes="(max-width: 768px) 50vw, 250px"
                 />
               </a>
