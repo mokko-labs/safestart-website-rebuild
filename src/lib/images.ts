@@ -17,7 +17,7 @@ import markStega from "@/assets/team/mark-stega.jpg";
 
 // Partners
 import partners31 from "@/assets/partners/partners31.png";
-import partners6 from "@/assets/partners/partners6.jpg";
+import partners6 from "@/assets/partners/partners6.png";
 import partners7 from "@/assets/partners/partners7.png";
 import partners8 from "@/assets/partners/partners8.png";
 
@@ -44,7 +44,7 @@ export const teamImages: Record<string, StaticImageData> = {
 
 export const partnerImages: Record<string, StaticImageData> = {
   "partners31.png": partners31,
-  "partners6.jpg": partners6,
+  "partners6.png": partners6,
   "partners7.png": partners7,
   "partners8.png": partners8,
 };
