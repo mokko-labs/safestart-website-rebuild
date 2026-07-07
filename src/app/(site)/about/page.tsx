@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
 
 import { CtaSection } from "@/components/cta-section";
+import { TeamMemberCard } from "@/components/team-member-card";
 import { team, partners, type TeamMember } from "@/lib/data";
 import { teamImages, partnerImages } from "@/lib/images";
 
@@ -15,53 +15,7 @@ export const metadata: Metadata = {
 
 function TeamCard({ member }: { member: TeamMember }) {
   const photo = member.image ? teamImages[member.image] : undefined;
-
-  return (
-    <details className="group flex flex-col border border-border bg-card">
-      <summary className="flex cursor-pointer list-none flex-col [&::-webkit-details-marker]:hidden">
-        {photo && (
-          <Image
-            src={photo}
-            alt={`Portrait of ${member.name}`}
-            className="aspect-square w-full object-cover object-top"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 373px"
-          />
-        )}
-        <span className="flex flex-1 items-start justify-between gap-3 p-5">
-          <span className="block">
-            <h3 className="text-lg">{member.name}</h3>
-            {member.credentials && (
-              <p className="text-sm font-medium text-primary">
-                {member.credentials}
-              </p>
-            )}
-            {member.role !== "Advisory Board" && (
-              <p className="mt-1 text-sm text-muted-foreground">
-                {member.role}
-              </p>
-            )}
-          </span>
-          <span
-            className="mt-1 flex shrink-0 items-center gap-1 text-xs font-medium uppercase tracking-wide text-muted-foreground"
-            aria-hidden
-          >
-            Bio
-            <ChevronDown className="size-4 transition-transform group-open:rotate-180" />
-          </span>
-        </span>
-      </summary>
-      <div className="space-y-3 border-t border-border p-5">
-        {member.bio.map((paragraph) => (
-          <p
-            key={paragraph}
-            className="text-sm leading-relaxed text-muted-foreground"
-          >
-            {paragraph}
-          </p>
-        ))}
-      </div>
-    </details>
-  );
+  return <TeamMemberCard member={member} photo={photo} />;
 }
 
 export default function AboutPage() {
